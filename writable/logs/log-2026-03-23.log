@@ -1,0 +1,367 @@
+CRITICAL - 2026-03-23 10:21:24 --> Class "Dompdf\Cpdf" not found
+in APPPATH\ThirdParty\dompdf\src\Adapter\CPDF.php on line 177.
+ 1 APPPATH\ThirdParty\dompdf\src\CanvasFactory.php(58): Dompdf\Adapter\CPDF->__construct('letter', 'portrait', Object(Dompdf\Dompdf))
+ 2 APPPATH\ThirdParty\dompdf\src\Dompdf.php(274): Dompdf\CanvasFactory::get_instance(Object(Dompdf\Dompdf), 'letter', 'portrait')
+ 3 APPPATH\Controllers\Dossiers.php(344): Dompdf\Dompdf->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:40:04 --> Call to undefined method App\Models\DossierModel::get_by_id
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Dossiers.php(534): CodeIgniter\Model->__call('get_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:40:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\DossierModel.php on line 135.
+ 1 APPPATH\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-23 10:41:35 --> mysqli_sql_exception: Unknown column 'm.dep_origen_id' in 'on clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `m`.*, `...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.*, `...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.*, `...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(146): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-23 10:41:35 --> Unknown column 'm.dep_origen_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `u`.`nombre` as `usuario_nombre`, `d_orig`.`nombre` as `dep_origen`, `d_dest`.`nombre` as `dep_destino`, `e`.`nombre` as `estado_nombre`
+FROM `movimientos_expediente` `m`
+LEFT JOIN `usuarios` `u` ON `u`.`id` = `m`.`usuario_id`
+LEFT JOIN `departamentos` `d_orig` ON `d_orig`.`id` = `m`.`dep_origen_id`
+LEFT JOIN `departamentos` `d_dest` ON `d_dest`.`id` = `m`.`dep_destino_id`
+LEFT JOIN `estados` `e` ON `e`.`id` = `m`.`estado_id`
+WHERE `m`.`expediente_id` = :m.expediente_id:
+ORDER BY `m`.`created_at` DESC', [...], false)
+ 2 APPPATH\Models\DossierModel.php(146): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-23 10:43:55 --> mysqli_sql_exception: Unknown column 'm.dep_destino_id' in 'on clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `m`.*, `...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.*, `...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.*, `...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(146): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-23 10:43:55 --> Unknown column 'm.dep_destino_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `u`.`nombre` as `usuario_nombre`, `d_orig`.`nombre` as `dep_origen`, `d_dest`.`nombre` as `dep_destino`, `e`.`nombre` as `estado_nombre`
+FROM `movimientos_expediente` `m`
+LEFT JOIN `usuarios` `u` ON `u`.`id` = `m`.`usuario_id`
+LEFT JOIN `departamentos` `d_orig` ON `d_orig`.`id` = `m`.`departamento_origen`
+LEFT JOIN `departamentos` `d_dest` ON `d_dest`.`id` = `m`.`dep_destino_id`
+LEFT JOIN `estados` `e` ON `e`.`id` = `m`.`estado_id`
+WHERE `m`.`expediente_id` = :m.expediente_id:
+ORDER BY `m`.`created_at` DESC', [...], false)
+ 2 APPPATH\Models\DossierModel.php(146): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-23 10:44:53 --> mysqli_sql_exception: Unknown column 'm.estado_id' in 'on clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `m`.*, `...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.*, `...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.*, `...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(146): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-23 10:44:53 --> Unknown column 'm.estado_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `u`.`nombre` as `usuario_nombre`, `d_orig`.`nombre` as `dep_origen`, `d_dest`.`nombre` as `dep_destino`, `e`.`nombre` as `estado_nombre`
+FROM `movimientos_expediente` `m`
+LEFT JOIN `usuarios` `u` ON `u`.`id` = `m`.`usuario_id`
+LEFT JOIN `departamentos` `d_orig` ON `d_orig`.`id` = `m`.`departamento_origen`
+LEFT JOIN `departamentos` `d_dest` ON `d_dest`.`id` = `m`.`departamento_destino`
+LEFT JOIN `estados` `e` ON `e`.`id` = `m`.`estado_id`
+WHERE `m`.`expediente_id` = :m.expediente_id:
+ORDER BY `m`.`created_at` DESC', [...], false)
+ 2 APPPATH\Models\DossierModel.php(146): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-23 10:44:54 --> mysqli_sql_exception: Unknown column 'm.estado_id' in 'on clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `m`.*, `...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.*, `...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.*, `...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(146): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-23 10:44:54 --> Unknown column 'm.estado_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `u`.`nombre` as `usuario_nombre`, `d_orig`.`nombre` as `dep_origen`, `d_dest`.`nombre` as `dep_destino`, `e`.`nombre` as `estado_nombre`
+FROM `movimientos_expediente` `m`
+LEFT JOIN `usuarios` `u` ON `u`.`id` = `m`.`usuario_id`
+LEFT JOIN `departamentos` `d_orig` ON `d_orig`.`id` = `m`.`departamento_origen`
+LEFT JOIN `departamentos` `d_dest` ON `d_dest`.`id` = `m`.`departamento_destino`
+LEFT JOIN `estados` `e` ON `e`.`id` = `m`.`estado_id`
+WHERE `m`.`expediente_id` = :m.expediente_id:
+ORDER BY `m`.`created_at` DESC', [...], false)
+ 2 APPPATH\Models\DossierModel.php(146): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:50:32 --> Call to undefined method App\Models\DossierModel::get_by_id
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Dossiers.php(534): CodeIgniter\Model->__call('get_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-23 10:51:02 --> mysqli_sql_exception: Unknown column 'm.dep_origen_id' in 'on clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `m`.*, `...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.*, `...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.*, `...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(160): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-23 10:51:02 --> Unknown column 'm.dep_origen_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `u`.`nombre` as `usuario_nombre`, `d_orig`.`nombre` as `dep_origen`, `d_dest`.`nombre` as `dep_destino`, `e`.`nombre` as `nombre_estado`
+FROM `movimientos_expediente` `m`
+JOIN `expedientes` `exp` ON `exp`.`id` = `m`.`expediente_id`
+LEFT JOIN `estados` `e` ON `e`.`id` = `exp`.`estado_id`
+LEFT JOIN `usuarios` `u` ON `u`.`id` = `m`.`usuario_id`
+LEFT JOIN `departamentos` `d_orig` ON `d_orig`.`id` = `m`.`dep_origen_id`
+LEFT JOIN `departamentos` `d_dest` ON `d_dest`.`id` = `m`.`dep_destino_id`
+WHERE `m`.`expediente_id` = :m.expediente_id:
+ORDER BY `m`.`created_at` DESC', [...], false)
+ 2 APPPATH\Models\DossierModel.php(160): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-23 10:52:30 --> mysqli_sql_exception: Unknown column 'm.created_at' in 'order clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `m`.*, `...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.*, `...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.*, `...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(160): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-23 10:52:30 --> Unknown column 'm.created_at' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `u`.`nombre` as `usuario_nombre`, `d_orig`.`nombre` as `dep_origen`, `d_dest`.`nombre` as `dep_destino`, `e`.`nombre` as `nombre_estado`
+FROM `movimientos_expediente` `m`
+JOIN `expedientes` `exp` ON `exp`.`id` = `m`.`expediente_id`
+LEFT JOIN `estados` `e` ON `e`.`id` = `exp`.`estado_id`
+LEFT JOIN `usuarios` `u` ON `u`.`id` = `m`.`usuario_id`
+LEFT JOIN `departamentos` `d_orig` ON `d_orig`.`id` = `m`.`departamento_origen`
+LEFT JOIN `departamentos` `d_dest` ON `d_dest`.`id` = `m`.`departamento_destino`
+WHERE `m`.`expediente_id` = :m.expediente_id:
+ORDER BY `m`.`created_at` DESC', [...], false)
+ 2 APPPATH\Models\DossierModel.php(160): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-23 10:52:31 --> mysqli_sql_exception: Unknown column 'm.created_at' in 'order clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `m`.*, `...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.*, `...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.*, `...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(160): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-23 10:52:31 --> Unknown column 'm.created_at' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `m`.*, `u`.`nombre` as `usuario_nombre`, `d_orig`.`nombre` as `dep_origen`, `d_dest`.`nombre` as `dep_destino`, `e`.`nombre` as `nombre_estado`
+FROM `movimientos_expediente` `m`
+JOIN `expedientes` `exp` ON `exp`.`id` = `m`.`expediente_id`
+LEFT JOIN `estados` `e` ON `e`.`id` = `exp`.`estado_id`
+LEFT JOIN `usuarios` `u` ON `u`.`id` = `m`.`usuario_id`
+LEFT JOIN `departamentos` `d_orig` ON `d_orig`.`id` = `m`.`departamento_origen`
+LEFT JOIN `departamentos` `d_dest` ON `d_dest`.`id` = `m`.`departamento_destino`
+WHERE `m`.`expediente_id` = :m.expediente_id:
+ORDER BY `m`.`created_at` DESC', [...], false)
+ 2 APPPATH\Models\DossierModel.php(160): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dossiers.php(534): App\Models\DossierModel->get_by_id('8')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:53:13 --> Call to undefined method App\Models\DossierModel::get_historial_completo
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Dossiers.php(535): CodeIgniter\Model->__call('get_historial_completo', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:53:14 --> Call to undefined method App\Models\DossierModel::get_historial_completo
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Dossiers.php(535): CodeIgniter\Model->__call('get_historial_completo', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:53:17 --> Call to undefined method App\Models\DossierModel::get_historial_completo
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Dossiers.php(535): CodeIgniter\Model->__call('get_historial_completo', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:53:51 --> Undefined property: stdClass::$estado_nombre
+in APPPATH\Views\dossier\view.php on line 28.
+ 1 APPPATH\Views\dossier\view.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$estado_nombre', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/view', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(537): view('dossier/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:53:54 --> Undefined property: stdClass::$estado_nombre
+in APPPATH\Views\dossier\view.php on line 28.
+ 1 APPPATH\Views\dossier\view.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$estado_nombre', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/view', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(537): view('dossier/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:55:54 --> Undefined property: stdClass::$created_at
+in APPPATH\Views\dossier\view.php on line 29.
+ 1 APPPATH\Views\dossier\view.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$created_at', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/view', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(537): view('dossier/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:55:55 --> Undefined property: stdClass::$created_at
+in APPPATH\Views\dossier\view.php on line 29.
+ 1 APPPATH\Views\dossier\view.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$created_at', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/view', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(537): view('dossier/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:55:57 --> Undefined property: stdClass::$created_at
+in APPPATH\Views\dossier\view.php on line 29.
+ 1 APPPATH\Views\dossier\view.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$created_at', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/view', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(537): view('dossier/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:56:11 --> Undefined property: stdClass::$observaciones
+in APPPATH\Views\dossier\view.php on line 38.
+ 1 APPPATH\Views\dossier\view.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$observaciones', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/view', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(537): view('dossier/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:56:13 --> Undefined property: stdClass::$observaciones
+in APPPATH\Views\dossier\view.php on line 38.
+ 1 APPPATH\Views\dossier\view.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$observaciones', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/view', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(537): view('dossier/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:56:15 --> Undefined property: stdClass::$observaciones
+in APPPATH\Views\dossier\view.php on line 38.
+ 1 APPPATH\Views\dossier\view.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$observaciones', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/view', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(537): view('dossier/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:57:08 --> Undefined property: stdClass::$observaciones
+in APPPATH\Views\dossier\view.php on line 38.
+ 1 APPPATH\Views\dossier\view.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$observaciones', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/view', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(537): view('dossier/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 10:57:09 --> Undefined property: stdClass::$observaciones
+in APPPATH\Views\dossier\view.php on line 38.
+ 1 APPPATH\Views\dossier\view.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$observaciones', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/view', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(537): view('dossier/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

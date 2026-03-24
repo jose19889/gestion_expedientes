@@ -1,0 +1,34 @@
+CRITICAL - 2023-11-16 12:30:55 --> Call to a member function get() on null
+in APPPATH\Controllers\Users.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 12:35:23 --> Call to a member function get() on null
+in APPPATH\Controllers\Users.php on line 139.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 12:44:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::update()
+in APPPATH\Models\UserModel.php on line 38.
+ 1 APPPATH\Controllers\Users.php(148): App\Models\UserModel->edit_User()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 12:58:52 --> Call to a member function getVar() on null
+in APPPATH\Controllers\Users.php on line 148.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 13:03:45 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray()
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Users.php(151): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

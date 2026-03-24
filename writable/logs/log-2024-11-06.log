@@ -1,0 +1,138 @@
+ERROR - 2024-11-06 05:16:42 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'app_anticorupci...', 3306, '', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Login.php(31): App\Models\UserModel->getUserByEmail('test1@gmail.com')
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#9 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Login.php(31): App\Models\UserModel->getUserByEmail('test1@gmail.com')
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-11-06 05:16:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `roles`.`role_name`
+FROM `users`
+JOIN `roles` ON `users`.`role_id` = `roles`.`id`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Login.php(31): App\Models\UserModel->getUserByEmail('test1@gmail.com')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-06 14:02:26 --> Invalid file: "upload_form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('upload_form.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('upload_form', [], true)
+ 3 APPPATH\Controllers\FileController.php(42): view('upload_form')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FileController->upload()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-06 14:02:28 --> Invalid file: "upload_form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('upload_form.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('upload_form', [], true)
+ 3 APPPATH\Controllers\FileController.php(42): view('upload_form')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FileController->upload()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-06 14:02:47 --> Invalid file: "upload_form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('upload_form.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('upload_form', [], true)
+ 3 APPPATH\Controllers\FileController.php(42): view('upload_form')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FileController->upload()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-06 14:02:52 --> Invalid file: "upload_form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('upload_form.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('upload_form', [], true)
+ 3 APPPATH\Controllers\FileController.php(42): view('upload_form')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FileController->upload()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-06 14:21:35 --> mysqli_sql_exception: Table 'app_anticorupciontest.files' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `fi...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fi...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fi...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fi...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\FileController.php(41): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\FileController->upload()
+#9 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+#10 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-11-06 14:21:35 --> Table 'app_anticorupciontest.files' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `files` (`file_name`, `file`, `created_at`, `updated_at`) VALUES (:file_name:, :file:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\FileController.php(41): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FileController->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-06 15:04:00 --> Class "App\Controllers\DenunciasModel" not found
+in APPPATH\Controllers\DataTransferController.php on line 151.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-06 15:04:31 --> Class "App\Models\DenunciasModel" not found
+in APPPATH\Controllers\DataTransferController.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-06 15:07:28 --> Object of class App\Models\EmailsModel could not be converted to string
+in APPPATH\Controllers\DataTransferController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-06 15:08:21 --> Undefined variable $email_obj
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email_obj', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(160): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

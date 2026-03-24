@@ -1,0 +1,1044 @@
+CRITICAL - 2024-10-29 05:03:44 --> Undefined variable $data
+in APPPATH\Controllers\DataTransferController.php on line 38.
+ 1 APPPATH\Controllers\DataTransferController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 05:04:14 --> Undefined variable $data
+in APPPATH\Controllers\DataTransferController.php on line 38.
+ 1 APPPATH\Controllers\DataTransferController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 05:06:05 --> Undefined variable $data
+in APPPATH\Controllers\DataTransferController.php on line 38.
+ 1 APPPATH\Controllers\DataTransferController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 05:06:15 --> Undefined variable $data
+in APPPATH\Controllers\DataTransferController.php on line 38.
+ 1 APPPATH\Controllers\DataTransferController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 05:07:01 --> Undefined array key "codigo-referencia"
+in APPPATH\Controllers\DataTransferController.php on line 40.
+ 1 APPPATH\Controllers\DataTransferController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo-referencia"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 05:07:28 --> mysqli_sql_exception: Unknown column 'documento' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(61): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 05:07:28 --> Unknown column 'documento' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_data` (`form_id`, `status`, `nombre`, `apellidos`, `documento`, `contacto`, `correo_electronico`, `other`, `institucion`, `direccion_seccion`, `pais`, `tipo_denuncia`, `subject`, `mensaje`, `tipo_fichero`, `files`) VALUES (:form_id:, :status:, :nombre:, :apellidos:, :documento:, :contacto:, :correo_electronico:, :other:, :institucion:, :direccion_seccion:, :pais:, :tipo_denuncia:, :subject:, :mensaje:, :tipo_fichero:, :files:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(61): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 05:09:54 --> mysqli_sql_exception: Unknown column 'contacto' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(61): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 05:09:54 --> Unknown column 'contacto' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_data` (`form_id`, `status`, `nombre`, `apellidos`, `contacto`, `correo_electronico`, `other`, `institucion`, `direccion_seccion`, `pais`, `tipo_denuncia`, `subject`, `mensaje`, `tipo_fichero`, `files`) VALUES (:form_id:, :status:, :nombre:, :apellidos:, :contacto:, :correo_electronico:, :other:, :institucion:, :direccion_seccion:, :pais:, :tipo_denuncia:, :subject:, :mensaje:, :tipo_fichero:, :files:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(61): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 05:09:56 --> mysqli_sql_exception: Unknown column 'contacto' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(61): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 05:09:56 --> Unknown column 'contacto' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_data` (`form_id`, `status`, `nombre`, `apellidos`, `contacto`, `correo_electronico`, `other`, `institucion`, `direccion_seccion`, `pais`, `tipo_denuncia`, `subject`, `mensaje`, `tipo_fichero`, `files`) VALUES (:form_id:, :status:, :nombre:, :apellidos:, :contacto:, :correo_electronico:, :other:, :institucion:, :direccion_seccion:, :pais:, :tipo_denuncia:, :subject:, :mensaje:, :tipo_fichero:, :files:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(61): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 05:18:04 --> mysqli_sql_exception: Table 'app_anticorupcion.form_data' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 05:18:04 --> Table 'app_anticorupcion.form_data' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `form_data`
+WHERE `form_id` = :form_id:', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 05:44:39 --> Undefined array key "codigo-referencia"
+in APPPATH\Controllers\DataTransferController.php on line 40.
+ 1 APPPATH\Controllers\DataTransferController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo-referencia"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 05:48:19 --> Undefined array key "codigo-referencia"
+in APPPATH\Controllers\DataTransferController.php on line 40.
+ 1 APPPATH\Controllers\DataTransferController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo-referencia"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 05:48:21 --> Undefined array key "codigo-referencia"
+in APPPATH\Controllers\DataTransferController.php on line 40.
+ 1 APPPATH\Controllers\DataTransferController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo-referencia"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 05:48:40 --> mysqli_sql_exception: Table 'app_anticorupcion.form_data' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 05:48:40 --> Table 'app_anticorupcion.form_data' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_data` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `text-592`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `direccion_seccion`, `ciudades`, `pais`, `tipo_denuncia`, `subject`, `mensaje`, `tipo_fichero`, `files`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, :text-592:, : menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :direccion_seccion:, :ciudades:, :pais:, :tipo_denuncia:, :subject:, :mensaje:, :tipo_fichero:, :files:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 05:49:13 --> mysqli_sql_exception: Unknown column 'text-592' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 05:49:13 --> Unknown column 'text-592' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `text-592`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `direccion_seccion`, `ciudades`, `pais`, `tipo_denuncia`, `subject`, `mensaje`, `tipo_fichero`, `files`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, :text-592:, : menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :direccion_seccion:, :ciudades:, :pais:, :tipo_denuncia:, :subject:, :mensaje:, :tipo_fichero:, :files:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 05:49:41 --> mysqli_sql_exception: Unknown column 'text-592' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 05:49:41 --> Unknown column 'text-592' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `text-592`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `direccion_seccion`, `ciudades`, `pais`, `tipo_denuncia`, `subject`, `mensaje`, `tipo_fichero`, `files`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, :text-592:, : menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :direccion_seccion:, :ciudades:, :pais:, :tipo_denuncia:, :subject:, :mensaje:, :tipo_fichero:, :files:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 05:50:00 --> mysqli_sql_exception: Unknown column 'pais' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 05:50:00 --> Unknown column 'pais' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `direccion_seccion`, `ciudades`, `pais`, `tipo_denuncia`, `subject`, `mensaje`, `tipo_fichero`, `files`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, : menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :direccion_seccion:, :ciudades:, :pais:, :tipo_denuncia:, :subject:, :mensaje:, :tipo_fichero:, :files:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 05:50:21 --> mysqli_sql_exception: Unknown column 'subject' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 05:50:21 --> Unknown column 'subject' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `subject`, `mensaje`, `tipo_fichero`, `files`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, : menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :subject:, :mensaje:, :tipo_fichero:, :files:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 05:50:38 --> mysqli_sql_exception: Unknown column 'files' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 05:50:38 --> Unknown column 'files' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `tipo_fichero`, `files`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, : menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :tipo_fichero:, :files:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 05:54:14 --> mysqli_sql_exception: Table 'app_anticorupcion.denuncias' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 05:54:14 --> Table 'app_anticorupcion.denuncias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `denuncias`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 06:04:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_anticorupcion`.`denuncias`, CONSTRAINT `fk_denucnias_estado` FOREIGN KEY (`id_estado`) REFERENCES `statuses` (`id`)) in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 06:04:38 --> Cannot add or update a child row: a foreign key constraint fails (`app_anticorupcion`.`denuncias`, CONSTRAINT `fk_denucnias_estado` FOREIGN KEY (`id_estado`) REFERENCES `statuses` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, : menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 06:06:20 --> mysqli_sql_exception: Table 'app_anticorupcion.form_data' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(78): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#9 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-10-29 06:06:20 --> Table 'app_anticorupcion.form_data' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `form_data`
+ORDER BY `form_id` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DataTransferController.php(78): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 06:06:22 --> mysqli_sql_exception: Table 'app_anticorupcion.form_data' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(78): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#9 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-10-29 06:06:22 --> Table 'app_anticorupcion.form_data' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `form_data`
+ORDER BY `form_id` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DataTransferController.php(78): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 06:06:57 --> Undefined array key "documento"
+in APPPATH\Views\reports\index.php on line 39.
+ 1 APPPATH\Views\reports\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "documento"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(79): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 06:08:32 --> Undefined array key "contacto"
+in APPPATH\Views\reports\index.php on line 40.
+ 1 APPPATH\Views\reports\index.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contacto"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(79): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 06:09:21 --> Undefined array key "email"
+in APPPATH\Views\reports\index.php on line 41.
+ 1 APPPATH\Views\reports\index.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(79): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 06:09:52 --> Undefined array key "email"
+in APPPATH\Views\reports\index.php on line 41.
+ 1 APPPATH\Views\reports\index.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(79): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 06:10:06 --> Undefined array key "pais"
+in APPPATH\Views\reports\index.php on line 41.
+ 1 APPPATH\Views\reports\index.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pais"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(79): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 06:12:10 --> Undefined array key "seccion_direccion"
+in APPPATH\Views\reports\index.php on line 43.
+ 1 APPPATH\Views\reports\index.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "seccion_direccion"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 43)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(79): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 06:12:26 --> Undefined array key "asunto"
+in APPPATH\Views\reports\index.php on line 44.
+ 1 APPPATH\Views\reports\index.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "asunto"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(79): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:27:56 --> Undefined array key "asunto"
+in APPPATH\Views\reports\index.php on line 41.
+ 1 APPPATH\Views\reports\index.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "asunto"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(79): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:30:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:31:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:31:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:31:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:32:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:32:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:32:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:32:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:32:51 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:35:00 --> Undefined array key "contacto"
+in APPPATH\Views\reports\edit.php on line 34.
+ 1 APPPATH\Views\reports\edit.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contacto"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 34)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:35:02 --> Undefined array key "contacto"
+in APPPATH\Views\reports\edit.php on line 34.
+ 1 APPPATH\Views\reports\edit.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contacto"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 34)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:35:04 --> Undefined array key "contacto"
+in APPPATH\Views\reports\edit.php on line 34.
+ 1 APPPATH\Views\reports\edit.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contacto"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 34)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:35:57 --> Undefined array key "contacto"
+in APPPATH\Views\reports\edit.php on line 38.
+ 1 APPPATH\Views\reports\edit.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contacto"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:38:07 --> Undefined array key "correo_elcetronico"
+in APPPATH\Views\reports\edit.php on line 38.
+ 1 APPPATH\Views\reports\edit.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "correo_elcetronico"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:38:20 --> Undefined array key "seccion_direccion"
+in APPPATH\Views\reports\edit.php on line 47.
+ 1 APPPATH\Views\reports\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "seccion_direccion"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:38:37 --> Undefined array key "pais"
+in APPPATH\Views\reports\edit.php on line 50.
+ 1 APPPATH\Views\reports\edit.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pais"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:39:32 --> Undefined array key "asunto"
+in APPPATH\Views\reports\edit.php on line 59.
+ 1 APPPATH\Views\reports\edit.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "asunto"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 59)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:40:27 --> Undefined array key "asunto"
+in APPPATH\Views\reports\edit.php on line 59.
+ 1 APPPATH\Views\reports\edit.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "asunto"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 59)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(86): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 13:53:42 --> mysqli_sql_exception: Table 'app_anticorupcion.estados' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  d.id, d...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  d.id, d...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  d.id, d...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\EmailsModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT  d.id, d...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(88): App\Models\EmailsModel->GetemailData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 13:53:42 --> Table 'app_anticorupcion.estados' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\EmailsModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT  d.id, d.nombre as dname,  d.apellidos, d.direccion_seccion, d.ciudades, d.tipo_denuncias, d.mensaje ,   e.name FROM denuncias d JOIN estados e ON d.id_estado  = e.id ')
+ 2 APPPATH\Controllers\DataTransferController.php(88): App\Models\EmailsModel->GetemailData()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-29 13:54:37 --> mysqli_sql_exception: Unknown column 'd.tipo_denuncias' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  d.id, d...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  d.id, d...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  d.id, d...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\EmailsModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT  d.id, d...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(88): App\Models\EmailsModel->GetemailData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-29 13:54:37 --> Unknown column 'd.tipo_denuncias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\EmailsModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT  d.id, d.nombre as dname,  d.apellidos, d.direccion_seccion, d.ciudades, d.tipo_denuncias, d.mensaje ,   e.name FROM denuncias d JOIN statuses e ON d.id_estado  = e.id ')
+ 2 APPPATH\Controllers\DataTransferController.php(88): App\Models\EmailsModel->GetemailData()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:59:13 --> Undefined array key "name"
+in APPPATH\Views\reports\edit.php on line 72.
+ 1 APPPATH\Views\reports\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 13:59:17 --> Undefined array key "name"
+in APPPATH\Views\reports\edit.php on line 72.
+ 1 APPPATH\Views\reports\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:00:49 --> Undefined array key "name"
+in APPPATH\Views\reports\edit.php on line 72.
+ 1 APPPATH\Views\reports\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:02:30 --> Undefined array key "name"
+in APPPATH\Views\reports\edit.php on line 72.
+ 1 APPPATH\Views\reports\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:04:01 --> syntax error, unexpected end of file
+in APPPATH\Views\reports\edit.php on line 104.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 3 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:05:37 --> Undefined array key "name"
+in APPPATH\Views\reports\edit.php on line 72.
+ 1 APPPATH\Views\reports\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:07:09 --> Undefined array key "name"
+in APPPATH\Views\reports\edit.php on line 72.
+ 1 APPPATH\Views\reports\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:07:25 --> Undefined array key "name"
+in APPPATH\Views\reports\edit.php on line 72.
+ 1 APPPATH\Views\reports\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:07:38 --> Undefined array key "name"
+in APPPATH\Views\reports\edit.php on line 72.
+ 1 APPPATH\Views\reports\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:09:38 --> Undefined variable $statusModel
+in APPPATH\Controllers\DataTransferController.php on line 88.
+ 1 APPPATH\Controllers\DataTransferController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $statusModel', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:10:02 --> Call to undefined method App\Models\StatusModel::get_status
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\DataTransferController.php(88): CodeIgniter\Model->__call('get_status', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:15:06 --> Undefined array key "name"
+in APPPATH\Views\reports\edit.php on line 72.
+ 1 APPPATH\Views\reports\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:15:09 --> Undefined array key "name"
+in APPPATH\Views\reports\edit.php on line 72.
+ 1 APPPATH\Views\reports\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:17:21 --> Undefined array key "name"
+in APPPATH\Views\reports\edit.php on line 72.
+ 1 APPPATH\Views\reports\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:18:28 --> Undefined variable $user_obj
+in APPPATH\Views\reports\edit.php on line 77.
+ 1 APPPATH\Views\reports\edit.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_obj', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 77)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(89): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:46:31 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\DataTransferController.php on line 105.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 14:54:29 --> Undefined array key "name"
+in APPPATH\Views\users\edit.php on line 20.
+ 1 APPPATH\Views\users\edit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\users\\edit.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\users\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('users/edit', [], true)
+ 5 APPPATH\Controllers\Users.php(118): view('users/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->edit('13')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:01:29 --> Undefined variable $emails
+in APPPATH\Views\reports\index.php on line 32.
+ 1 APPPATH\Views\reports\index.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emails', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 32)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\Reports.php(13): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reports->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:08:11 --> syntax error, unexpected variable "$session"
+in APPPATH\Controllers\DataTransferController.php on line 105.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:09:29 --> syntax error, unexpected variable "$session"
+in APPPATH\Controllers\DataTransferController.php on line 105.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:09:33 --> syntax error, unexpected variable "$session"
+in APPPATH\Controllers\DataTransferController.php on line 105.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:32:43 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DataTransferController.php(111): CodeIgniter\Model->update('2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:32:49 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DataTransferController.php(111): CodeIgniter\Model->update('2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:33:05 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DataTransferController.php(111): CodeIgniter\Model->update('7', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:39:18 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DataTransferController.php(111): CodeIgniter\Model->update('7', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:41:12 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DataTransferController.php(121): CodeIgniter\Model->update('7', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:41:19 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DataTransferController.php(121): CodeIgniter\Model->update('7', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:44:47 --> Undefined array key "name"
+in APPPATH\Views\reports\index.php on line 39.
+ 1 APPPATH\Views\reports\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(81): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:45:34 --> Undefined array key "name"
+in APPPATH\Views\reports\index.php on line 39.
+ 1 APPPATH\Views\reports\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(81): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:46:26 --> Undefined array key "name"
+in APPPATH\Views\reports\index.php on line 39.
+ 1 APPPATH\Views\reports\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(81): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:46:33 --> Undefined array key "name"
+in APPPATH\Views\reports\index.php on line 39.
+ 1 APPPATH\Views\reports\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(81): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:48:21 --> Undefined array key "nombre"
+in APPPATH\Views\reports\index.php on line 34.
+ 1 APPPATH\Views\reports\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(82): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:48:25 --> Undefined array key "nombre"
+in APPPATH\Views\reports\index.php on line 34.
+ 1 APPPATH\Views\reports\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(82): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:48:48 --> Undefined array key "menu_instituciones"
+in APPPATH\Views\reports\index.php on line 37.
+ 1 APPPATH\Views\reports\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu_instituciones"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(82): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:48:51 --> Undefined array key "menu_instituciones"
+in APPPATH\Views\reports\index.php on line 37.
+ 1 APPPATH\Views\reports\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu_instituciones"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(82): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-29 15:49:14 --> Undefined array key "numero"
+in APPPATH\Views\reports\index.php on line 38.
+ 1 APPPATH\Views\reports\index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "numero"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(82): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

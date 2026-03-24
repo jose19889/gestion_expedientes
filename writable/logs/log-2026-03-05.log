@@ -1,0 +1,317 @@
+CRITICAL - 2026-03-05 12:57:16 --> Undefined variable $user_id
+in APPPATH\Controllers\Dossiers.php on line 163.
+ 1 APPPATH\Controllers\Dossiers.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->store()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 14:46:12 --> Undefined property: App\Controllers\Dossiers::$FileModel
+in APPPATH\Controllers\Dossiers.php on line 237.
+ 1 APPPATH\Controllers\Dossiers.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dossiers::$FileModel', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->store()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:00:58 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\Dossiers.php on line 261.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('13')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:02:05 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\Dossiers.php on line 263.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('13')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:02:06 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\Dossiers.php on line 263.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('13')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:18:43 --> Undefined property: App\Controllers\Dossiers::$DepartamentoModel
+in APPPATH\Controllers\Dossiers.php on line 335.
+ 1 APPPATH\Controllers\Dossiers.php(335): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dossiers::$DepartamentoModel', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 335)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:18:50 --> Undefined property: App\Controllers\Dossiers::$DepartamentoModel
+in APPPATH\Controllers\Dossiers.php on line 335.
+ 1 APPPATH\Controllers\Dossiers.php(335): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dossiers::$DepartamentoModel', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 335)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:21:17 --> Invalid file: "dossiers/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dossiers/edit.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossiers/edit', [], true)
+ 3 APPPATH\Controllers\Dossiers.php(339): view('dossiers/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:21:21 --> Invalid file: "dossiers/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dossiers/edit.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossiers/edit', [], true)
+ 3 APPPATH\Controllers\Dossiers.php(339): view('dossiers/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:21:33 --> Undefined variable $expediente
+in APPPATH\Views\dossier\edit.php on line 27.
+ 1 APPPATH\Views\dossier\edit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $expediente', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(339): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:21:39 --> Undefined variable $expediente
+in APPPATH\Views\dossier\edit.php on line 27.
+ 1 APPPATH\Views\dossier\edit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $expediente', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(339): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:26:11 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 27.
+ 1 APPPATH\Views\dossier\edit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(339): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:28:17 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 17.
+ 1 APPPATH\Views\dossier\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(339): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:28:19 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 17.
+ 1 APPPATH\Views\dossier\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(339): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:30:40 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 24.
+ 1 APPPATH\Views\dossier\edit.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(339): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:33:21 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 19.
+ 1 APPPATH\Views\dossier\edit.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(279): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:33:22 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 19.
+ 1 APPPATH\Views\dossier\edit.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(279): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:33:24 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 19.
+ 1 APPPATH\Views\dossier\edit.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(279): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:34:30 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 45.
+ 1 APPPATH\Views\dossier\edit.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(279): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:34:31 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 45.
+ 1 APPPATH\Views\dossier\edit.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(279): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:35:57 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:35:58 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:36:01 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:36:02 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:36:02 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:36:03 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:36:03 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:36:04 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:36:04 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:36:04 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:36:04 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-05 15:36:06 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\edit.php on line 47.
+ 1 APPPATH\Views\dossier\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/edit', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(337): view('dossier/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

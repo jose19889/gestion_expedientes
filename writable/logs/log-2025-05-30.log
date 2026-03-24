@@ -1,0 +1,56 @@
+ERROR - 2025-05-30 13:44:03 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'i10200142_ntee1'@'localhost' (using password: YES) in C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'i10200142_ntee1', Object(SensitiveParameterValue), 'anticorrupcion-...', 3306, '', 0)
+#1 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\apps\gestor-denuncias-beta\app\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\apps\gestor-denuncias-beta\app\Controllers\Login.php(24): App\Models\UserModel->getUserByEmail('admin-general@g...')
+#8 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#9 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\gestor-denuncias-beta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\apps\gestor-denuncias-beta\app\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\apps\gestor-denuncias-beta\app\Controllers\Login.php(24): App\Models\UserModel->getUserByEmail('admin-general@g...')
+#7 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\gestor-denuncias-beta\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-05-30 13:44:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `roles`.`role_name`
+FROM `users`
+JOIN `roles` ON `users`.`role_id` = `roles`.`id`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Login.php(24): App\Models\UserModel->getUserByEmail('admin-general@gmail.com')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-30 14:07:34 --> Invalid file: "portal/test.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('portal/test.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('portal/test', [], true)
+ 3 APPPATH\Controllers\Home.php(40): view('portal/test')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->portal()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

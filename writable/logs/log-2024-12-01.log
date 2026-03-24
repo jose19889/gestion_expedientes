@@ -1,0 +1,304 @@
+ERROR - 2024-12-01 13:39:41 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'app_anticorupci...', 3306, '', 0)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Login.php(31): App\Models\UserModel->getUserByEmail(NULL)
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#9 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Login.php(31): App\Models\UserModel->getUserByEmail(NULL)
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-01 13:39:41 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `roles`.`role_name`
+FROM `users`
+JOIN `roles` ON `users`.`role_id` = `roles`.`id`
+WHERE `email` IS NULL
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Login.php(31): App\Models\UserModel->getUserByEmail(null)
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-01 13:45:08 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'app_anticorupci...', 3306, '', 0)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Login.php(31): App\Models\UserModel->getUserByEmail('admin4@gamil.co...')
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#9 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Login.php(31): App\Models\UserModel->getUserByEmail('admin4@gamil.co...')
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-01 13:45:08 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `roles`.`role_name`
+FROM `users`
+JOIN `roles` ON `users`.`role_id` = `roles`.`id`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UserModel.php(34): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Login.php(31): App\Models\UserModel->getUserByEmail('admin4@gamil.com')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-01 14:33:35 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'app_anticorupci...', 3306, '', 0)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-01 14:33:35 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_denuncia`, COUNT(*) as count
+FROM `denuncias`
+GROUP BY `tipo_denuncia`
+ORDER BY `count` DESC', [], false)
+ 3 APPPATH\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-01 14:34:42 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'app_anticorupci...', 3306, '', 0)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-01 14:34:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_denuncia`, COUNT(*) as count
+FROM `denuncias`
+GROUP BY `tipo_denuncia`
+ORDER BY `count` DESC', [], false)
+ 3 APPPATH\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-01 14:41:12 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'app_anticorupciontest' in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'app_anticorupci...', 3306, '', 0)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'app_anticorupciontest' in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-01 14:41:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'app_anticorupciontest'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_denuncia`, COUNT(*) as count
+FROM `denuncias`
+GROUP BY `tipo_denuncia`
+ORDER BY `count` DESC', [], false)
+ 3 APPPATH\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-01 14:41:32 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'app_anticorupciontest' in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'app_anticorupci...', 3306, '', 0)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'app_anticorupciontest' in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-01 14:41:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'app_anticorupciontest'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_denuncia`, COUNT(*) as count
+FROM `denuncias`
+GROUP BY `tipo_denuncia`
+ORDER BY `count` DESC', [], false)
+ 3 APPPATH\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-01 14:41:59 --> mysqli_sql_exception: Table 'app_anticorupciontest.denuncias' doesn't exist in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_de...', 0)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_de...')
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_de...')
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-12-01 14:41:59 --> Table 'app_anticorupciontest.denuncias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_denuncia`, COUNT(*) as count
+FROM `denuncias`
+GROUP BY `tipo_denuncia`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-01 14:42:04 --> mysqli_sql_exception: Table 'app_anticorupciontest.denuncias' doesn't exist in C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_de...', 0)
+#1 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_de...')
+#2 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_de...')
+#3 C:\xampp\htdocs\apps\app_anticorrupcion\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#4 C:\xampp\htdocs\apps\app_anticorrupcion\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\app_anticorrupcion\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#6 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\app_anticorrupcion\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\app_anticorrupcion\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-12-01 14:42:04 --> Table 'app_anticorupciontest.denuncias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_denuncia`, COUNT(*) as count
+FROM `denuncias`
+GROUP BY `tipo_denuncia`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,139 @@
+CRITICAL - 2025-06-02 13:42:08 --> Invalid file: "portal/report-form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('portal/report-form.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('portal/report-form', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('portal/report-form')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->report_page()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-02 14:03:15 --> mysqli_sql_exception: Table 'app_denunciasv2.news' doesn't exist in C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\xampp\htdocs\apps\gestor-denuncias-beta\app\Models\NewsModel.php(44): CodeIgniter\BaseModel->findAll(5)
+#7 C:\xampp\htdocs\apps\gestor-denuncias-beta\app\Controllers\Posts.php(20): App\Models\NewsModel->getRecentPosts(5)
+#8 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(919): App\Controllers\Posts->news()
+#9 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+#10 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\gestor-denuncias-beta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-06-02 14:03:15 --> Table 'app_denunciasv2.news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `is_published` = :is_published:
+ORDER BY `published_at` DESC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(5, 0)
+ 4 APPPATH\Models\NewsModel.php(44): CodeIgniter\BaseModel->findAll(5)
+ 5 APPPATH\Controllers\Posts.php(20): App\Models\NewsModel->getRecentPosts(5)
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Posts->news()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-02 14:03:30 --> mysqli_sql_exception: Table 'app_denunciasv2.news' doesn't exist in C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\xampp\htdocs\apps\gestor-denuncias-beta\app\Models\NewsModel.php(44): CodeIgniter\BaseModel->findAll(5)
+#7 C:\xampp\htdocs\apps\gestor-denuncias-beta\app\Controllers\Posts.php(20): App\Models\NewsModel->getRecentPosts(5)
+#8 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(919): App\Controllers\Posts->news()
+#9 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+#10 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\gestor-denuncias-beta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-06-02 14:03:30 --> Table 'app_denunciasv2.news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `is_published` = :is_published:
+ORDER BY `published_at` DESC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(5, 0)
+ 4 APPPATH\Models\NewsModel.php(44): CodeIgniter\BaseModel->findAll(5)
+ 5 APPPATH\Controllers\Posts.php(20): App\Models\NewsModel->getRecentPosts(5)
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Posts->news()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-02 14:03:45 --> mysqli_sql_exception: Table 'app_denunciasv2.news' doesn't exist in C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\xampp\htdocs\apps\gestor-denuncias-beta\app\Models\NewsModel.php(44): CodeIgniter\BaseModel->findAll(5)
+#7 C:\xampp\htdocs\apps\gestor-denuncias-beta\app\Controllers\Posts.php(20): App\Models\NewsModel->getRecentPosts(5)
+#8 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(919): App\Controllers\Posts->news()
+#9 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+#10 C:\xampp\htdocs\apps\gestor-denuncias-beta\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\gestor-denuncias-beta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-06-02 14:03:45 --> Table 'app_denunciasv2.news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `is_published` = :is_published:
+ORDER BY `published_at` DESC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(5, 0)
+ 4 APPPATH\Models\NewsModel.php(44): CodeIgniter\BaseModel->findAll(5)
+ 5 APPPATH\Controllers\Posts.php(20): App\Models\NewsModel->getRecentPosts(5)
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Posts->news()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-02 14:25:43 --> Undefined array key "category_id"
+in APPPATH\Views\news\back-end\index.php on line 86.
+ 1 APPPATH\Views\news\back-end\index.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'C:\\xampp\\htdocs\\apps\\gestor-denuncias-beta\\app\\Views\\news\\back-end\\index.php', 86)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor-denuncias-beta\\app\\Views\\news\\back-end\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('news/back-end/index', [], true)
+ 5 APPPATH\Controllers\Posts.php(39): view('news/back-end/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Posts->news_back()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-02 14:25:45 --> Undefined array key "category_id"
+in APPPATH\Views\news\back-end\index.php on line 86.
+ 1 APPPATH\Views\news\back-end\index.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'C:\\xampp\\htdocs\\apps\\gestor-denuncias-beta\\app\\Views\\news\\back-end\\index.php', 86)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor-denuncias-beta\\app\\Views\\news\\back-end\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('news/back-end/index', [], true)
+ 5 APPPATH\Controllers\Posts.php(39): view('news/back-end/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Posts->news_back()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-02 14:31:58 --> Invalid file: "news/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('news/create.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('news/create', [], true)
+ 3 APPPATH\Controllers\Posts.php(88): view('news/create')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Posts->create()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-02 15:09:26 --> Invalid file: "news/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('news/edit.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('news/edit', [], true)
+ 3 APPPATH\Controllers\Posts.php(154): view('news/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Posts->edit_news('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

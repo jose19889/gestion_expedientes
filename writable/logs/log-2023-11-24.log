@@ -1,0 +1,168 @@
+CRITICAL - 2023-11-24 08:10:47 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 08:15:06 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 08:15:49 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 08:15:52 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 08:17:30 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 08:26:10 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 08:38:27 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 08:40:59 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 08:43:25 --> Call to a member function validate() on null
+in APPPATH\Controllers\Login.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 08:43:44 --> Call to a member function validate() on null
+in APPPATH\Controllers\Login.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 08:46:30 --> Object of class App\Models\UserModel could not be converted to string
+in APPPATH\Controllers\Login.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 08:46:42 --> Call to a member function validate() on null
+in APPPATH\Controllers\Login.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-24 10:33:00 --> mysqli_sql_exception: Unknown column 'user_email' in 'where clause' in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Login.php(34): CodeIgniter\BaseModel->first()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-24 10:33:00 --> Unknown column 'user_email' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(34): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-24 10:38:26 --> mysqli_sql_exception: Unknown column 'user_email' in 'where clause' in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Login.php(34): CodeIgniter\BaseModel->first()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-24 10:38:26 --> Unknown column 'user_email' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(34): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 10:45:30 --> Call to a member function userdata() on null
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 10:46:24 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 10:46:53 --> Call to undefined method App\Controllers\Login::session()
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 10:47:26 --> Call to a member function userdata() on null
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 10:47:55 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 10:48:21 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 10:48:39 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-24 10:50:19 --> Call to a member function validate() on null
+in APPPATH\Controllers\Login.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

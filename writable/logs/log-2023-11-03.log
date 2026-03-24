@@ -1,0 +1,42 @@
+CRITICAL - 2023-11-03 09:59:05 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Roles.php(116): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Roles->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 10:29:28 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Roles.php(116): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Roles->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 10:35:29 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Roles.php(116): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Roles->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 10:49:37 --> Call to a member function fails() on bool
+in APPPATH\Controllers\Users.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 13:58:25 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, null given, called in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Controller.php on line 194
+in SYSTEMPATH\Validation\Validation.php on line 553.
+ 1 SYSTEMPATH\Controller.php(194): CodeIgniter\Validation\Validation->setRules()
+ 2 SYSTEMPATH\Controller.php(148): CodeIgniter\Controller->setValidator()
+ 3 APPPATH\Controllers\Users.php(171): CodeIgniter\Controller->validate()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,11 @@
+CRITICAL - 2023-12-19 13:04:39 --> Undefined variable $roles
+in APPPATH\Views\reports\index.php on line 27.
+ 1 APPPATH\Views\reports\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $roles', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\Reports.php(10): view('reports/index')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reports->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

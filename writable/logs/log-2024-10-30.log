@@ -1,0 +1,469 @@
+CRITICAL - 2024-10-30 13:48:46 --> Undefined array key "name"
+in APPPATH\Views\users\edit.php on line 20.
+ 1 APPPATH\Views\users\edit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\users\\edit.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\users\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('users/edit', [], true)
+ 5 APPPATH\Controllers\Users.php(118): view('users/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->edit('19')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 14:11:53 --> Undefined array key "id_estado"
+in APPPATH\Views\reports\index.php on line 42.
+ 1 APPPATH\Views\reports\index.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_estado"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 42)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(82): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 14:11:59 --> Undefined array key "id_estado"
+in APPPATH\Views\reports\index.php on line 42.
+ 1 APPPATH\Views\reports\index.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_estado"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 42)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(82): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 14:12:18 --> syntax error, unexpected token "return"
+in APPPATH\Models\EmailsModel.php on line 22.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Models\\EmailsModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\EmailsModel')
+ 3 APPPATH\Controllers\DataTransferController.php(79): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\EmailsModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 14:12:31 --> Undefined constant "endinf"
+in APPPATH\Views\reports\index.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 4 APPPATH\Controllers\DataTransferController.php(82): view('reports/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 14:17:25 --> syntax error, unexpected token "echo"
+in APPPATH\Views\reports\index.php on line 43.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 3 APPPATH\Controllers\DataTransferController.php(82): view('reports/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 14:18:07 --> syntax error, unexpected token "echo"
+in APPPATH\Views\reports\index.php on line 45.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 3 APPPATH\Controllers\DataTransferController.php(82): view('reports/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 14:20:19 --> syntax error, unexpected token "endif"
+in APPPATH\Views\reports\index.php on line 48.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 3 APPPATH\Controllers\DataTransferController.php(82): view('reports/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 14:45:33 --> Undefined variable $results
+in APPPATH\Controllers\DataTransferController.php on line 84.
+ 1 APPPATH\Controllers\DataTransferController.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 14:50:57 --> Undefined array key "fichero_simple"
+in APPPATH\Controllers\DataTransferController.php on line 92.
+ 1 APPPATH\Controllers\DataTransferController.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fichero_simple"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 15:33:05 --> Undefined array key "simple_fichero"
+in APPPATH\Controllers\DataTransferController.php on line 155.
+ 1 APPPATH\Controllers\DataTransferController.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "simple_fichero"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 15:34:45 --> Undefined array key "simple_fichero"
+in APPPATH\Controllers\DataTransferController.php on line 155.
+ 1 APPPATH\Controllers\DataTransferController.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "simple_fichero"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 15:36:16 --> Undefined array key "simple_fichero"
+in APPPATH\Controllers\DataTransferController.php on line 155.
+ 1 APPPATH\Controllers\DataTransferController.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "simple_fichero"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 15:36:17 --> Undefined array key "simple_fichero"
+in APPPATH\Controllers\DataTransferController.php on line 155.
+ 1 APPPATH\Controllers\DataTransferController.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "simple_fichero"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 15:36:18 --> Undefined array key "simple_fichero"
+in APPPATH\Controllers\DataTransferController.php on line 155.
+ 1 APPPATH\Controllers\DataTransferController.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "simple_fichero"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 15:37:50 --> Undefined array key "simple_fichero"
+in APPPATH\Controllers\DataTransferController.php on line 155.
+ 1 APPPATH\Controllers\DataTransferController.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "simple_fichero"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 15:38:10 --> Undefined array key "simple_fichero"
+in APPPATH\Controllers\DataTransferController.php on line 155.
+ 1 APPPATH\Controllers\DataTransferController.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "simple_fichero"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 15:38:24 --> Undefined array key "simple_fichero"
+in APPPATH\Controllers\DataTransferController.php on line 155.
+ 1 APPPATH\Controllers\DataTransferController.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "simple_fichero"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 15:39:28 --> Undefined array key "simple_fichero"
+in APPPATH\Controllers\DataTransferController.php on line 155.
+ 1 APPPATH\Controllers\DataTransferController.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "simple_fichero"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 20:56:19 --> mysqli_sql_exception: Unknown column 'multilinefile_87cfdb7_file' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(122): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 20:56:20 --> Unknown column 'multilinefile_87cfdb7_file' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`, `multilinefile_87cfdb7_file`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:, :multilinefile_87cfdb7_file:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(122): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 20:56:34 --> mysqli_sql_exception: Unknown column 'multilinefile_87cfdb7_file' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(122): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 20:56:34 --> Unknown column 'multilinefile_87cfdb7_file' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`, `multilinefile_87cfdb7_file`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:, :multilinefile_87cfdb7_file:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(122): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 20:56:46 --> mysqli_sql_exception: Unknown column 'multilinefile_87cfdb7_file' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(122): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 20:56:46 --> Unknown column 'multilinefile_87cfdb7_file' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`, `multilinefile_87cfdb7_file`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:, :multilinefile_87cfdb7_file:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(122): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 21:18:08 --> mysqli_sql_exception: Unknown column 'multilinefile_87cfdb7_file' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(122): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 21:18:08 --> Unknown column 'multilinefile_87cfdb7_file' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`, `multilinefile_87cfdb7_file`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:, :multilinefile_87cfdb7_file:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(122): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 21:22:43 --> mysqli_sql_exception: Unknown column 'cfdb7_status' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(123): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 21:22:43 --> Unknown column 'cfdb7_status' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`, `multilinefile_87cfdb7_file`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:, :multilinefile_87cfdb7_file:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(123): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 21:32:41 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Controllers\DataTransferController.php on line 99.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 21:35:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM w...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM w...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM w...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT * FROM w...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-10-30 21:35:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\DataTransferController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT * FROM wp_db7_forms WHERE form_id IN (\'22\', \'23\'')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 21:47:15 --> syntax error, unexpected token "namespace", expecting "function" or "const"
+in APPPATH\Controllers\DataTransferController.php on line 78.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 21:48:24 --> mysqli_sql_exception: Unknown column 'cfdb7_status' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(124): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 21:48:24 --> Unknown column 'cfdb7_status' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`, `multilinefile_87cfdb7_file`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:, :multilinefile_87cfdb7_file:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(124): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 22:44:39 --> mysqli_sql_exception: Table 'app_anticorupcion.email_contents' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 22:44:39 --> Table 'app_anticorupcion.email_contents' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `email_contents` (`content`, `email_id`) VALUES (:content:, :email_id:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(101): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 22:46:42 --> mysqli_sql_exception: Table 'app_anticorupcion.email_contents' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 22:46:42 --> Table 'app_anticorupcion.email_contents' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `email_contents` (`content`, `email_id`) VALUES (:content:, :email_id:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(101): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 22:47:22 --> mysqli_sql_exception: Unknown column 'email_id' in 'where clause' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM w...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM w...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM w...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM w...', Array)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-10-30 22:47:22 --> Unknown column 'email_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM wp_wpmailsmtp_email_attachments WHERE email_id = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 22:48:48 --> mysqli_sql_exception: Unknown column 'email_id' in 'where clause' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM w...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM w...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM w...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM w...', Array)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-10-30 22:48:48 --> Unknown column 'email_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM wp_wpmailsmtp_email_attachments WHERE email_id = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 22:51:07 --> mysqli_sql_exception: Unknown column 'email_id' in 'where clause' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM w...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM w...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM w...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM w...', Array)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-10-30 22:51:07 --> Unknown column 'email_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM wp_wpmailsmtp_email_attachments WHERE email_id = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 22:51:29 --> mysqli_sql_exception: Unknown column 'email_id' in 'where clause' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM w...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM w...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM w...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM w...', Array)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-10-30 22:51:29 --> Unknown column 'email_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM wp_wpmailsmtp_email_attachments WHERE email_id = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 22:54:06 --> mysqli_sql_exception: Unknown column 'email_id' in 'where clause' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM w...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM w...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM w...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM w...', Array)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-10-30 22:54:06 --> Unknown column 'email_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM wp_wpmailsmtp_email_attachments WHERE email_id = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-30 22:55:28 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\DataTransferController.php on line 78.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-30 22:55:40 --> mysqli_sql_exception: Unknown column 'correct_column_name' in 'where clause' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM w...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM w...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM w...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM w...', Array)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-10-30 22:55:40 --> Unknown column 'correct_column_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM wp_wpmailsmtp_email_attachments WHERE correct_column_name = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

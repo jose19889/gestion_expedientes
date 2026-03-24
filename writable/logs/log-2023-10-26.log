@@ -1,0 +1,68 @@
+CRITICAL - 2023-10-26 10:54:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 46.
+ 1 APPPATH\Controllers\Users.php(21): App\Models\UserModel->getusersroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-26 14:29:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(185): mysqli->real_connect()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-26 14:29:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Controllers\Users.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 14:33:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 46.
+ 1 APPPATH\Controllers\Users.php(21): App\Models\UserModel->getusersroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 14:37:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 46.
+ 1 APPPATH\Controllers\Users.php(21): App\Models\UserModel->getusersroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 14:50:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 46.
+ 1 APPPATH\Controllers\Users.php(21): App\Models\UserModel->getusersroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

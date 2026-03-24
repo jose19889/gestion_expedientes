@@ -1,0 +1,30 @@
+CRITICAL - 2025-11-19 09:49:27 --> Call to a member function orderBy() on null
+in APPPATH\Controllers\Api\DenunciasController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\DenunciasController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\DenunciasController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-11-19 10:09:24 --> Call to a member function orderBy() on null
+in APPPATH\Controllers\Api\DenunciasController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\DenunciasController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\DenunciasController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-11-19 10:09:25 --> Call to a member function orderBy() on null
+in APPPATH\Controllers\Api\DenunciasController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\DenunciasController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\DenunciasController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-11-19 10:09:27 --> Call to a member function orderBy() on null
+in APPPATH\Controllers\Api\DenunciasController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\DenunciasController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\DenunciasController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-11-19 10:12:04 --> Call to a member function orderBy() on null
+in APPPATH\Controllers\Api\DenunciasController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\DenunciasController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\DenunciasController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

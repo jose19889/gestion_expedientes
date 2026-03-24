@@ -1,0 +1,210 @@
+ERROR - 2024-10-21 14:53:50 --> mysqli_sql_exception: Unknown column 'u.name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-21 14:53:50 --> Unknown column 'u.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.name as uname , u.surname, u.email, u. contacto, r.name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-21 14:54:31 --> mysqli_sql_exception: Unknown column 'u.name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-21 14:54:31 --> Unknown column 'u.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.name as uname , u.surname, u.email, u. contacto, r.name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-21 14:54:35 --> mysqli_sql_exception: Unknown column 'u.name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-21 14:54:35 --> Unknown column 'u.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.name as uname , u.surname, u.email, u. contacto, r.name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-21 14:55:01 --> mysqli_sql_exception: Unknown column 'u.surname' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-21 14:55:01 --> Unknown column 'u.surname' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.surname, u.email, u. contacto, r.name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-21 14:55:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'u.email, r.name FROM users u JOIN roles r ON u.role_id = r.id' at line 1 in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-21 14:55:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'u.email, r.name FROM users u JOIN roles r ON u.role_id = r.id' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname  u.email, r.name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-21 14:55:56 --> mysqli_sql_exception: Unknown column 'u.surname' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-21 14:55:56 --> Unknown column 'u.surname' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.surname, u.email, u. contacto, r.name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-21 14:56:10 --> mysqli_sql_exception: Unknown column 'u.contacto' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-21 14:56:10 --> Unknown column 'u.contacto' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.email, u. contacto, r.name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-21 14:56:24 --> mysqli_sql_exception: Unknown column 'r.name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-21 14:56:24 --> Unknown column 'r.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.email,  r.name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-21 19:47:09 --> mysqli_sql_exception: Unknown column 'r.name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-21 19:47:09 --> Unknown column 'r.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.email,  r.name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-21 22:33:22 --> Call to undefined function App\Controllers\extract_longtext_data()
+in APPPATH\Controllers\DenunciaController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DenunciaController->transfer_longtext_data()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DenunciaController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-21 22:35:27 --> Call to undefined function App\Controllers\extract_longtext_data()
+in APPPATH\Controllers\DenunciaController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DenunciaController->transfer_longtext_data()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DenunciaController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-21 22:35:29 --> Call to undefined function App\Controllers\extract_longtext_data()
+in APPPATH\Controllers\DenunciaController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DenunciaController->transfer_longtext_data()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DenunciaController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-21 22:35:49 --> Call to undefined function App\Controllers\extract_longtext_data()
+in APPPATH\Controllers\DenunciaController.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DenunciaController->transfer_longtext_data()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DenunciaController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-21 22:35:51 --> Call to undefined function App\Controllers\extract_longtext_data()
+in APPPATH\Controllers\DenunciaController.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DenunciaController->transfer_longtext_data()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DenunciaController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

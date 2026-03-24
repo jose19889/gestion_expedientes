@@ -1,0 +1,47 @@
+CRITICAL - 2024-10-22 05:50:46 --> Undefined variable $wpdb
+in APPPATH\Controllers\DataTransfer.php on line 21.
+ 1 APPPATH\Controllers\DataTransfer.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $wpdb', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransfer.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransfer->transfer()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransfer))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-22 09:09:24 --> mysqli_sql_exception: Unknown column 'r.name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-22 09:09:24 --> Unknown column 'r.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.email,  r.name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-22 09:09:37 --> mysqli_sql_exception: Unknown column 'r.name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-22 09:09:37 --> Unknown column 'r.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.email,  r.name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,28 @@
+CRITICAL - 2023-10-14 12:20:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 21.
+ 1 APPPATH\Controllers\Users.php(24): App\Models\UserModel->getuseroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->create()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 12:23:02 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 21.
+ 1 APPPATH\Controllers\Users.php(24): App\Models\UserModel->getuseroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->create()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 12:24:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 21.
+ 1 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuseroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 12:24:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 21.
+ 1 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuseroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

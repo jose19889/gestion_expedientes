@@ -1,0 +1,818 @@
+ERROR - 2024-11-02 04:45:59 --> mysqli_sql_exception: Unknown column 'correct_column_name' in 'where clause' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM w...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM w...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM w...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM w...', Array)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-02 04:45:59 --> Unknown column 'correct_column_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM wp_wpmailsmtp_email_attachments WHERE correct_column_name = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 05:23:25 --> mysqli_sql_exception: Unknown column 'correct_column_name' in 'where clause' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM w...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM w...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM w...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM w...', Array)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-02 05:23:25 --> Unknown column 'correct_column_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\DataTransferController.php(104): CodeIgniter\Database\BaseConnection->query('SELECT * FROM wp_wpmailsmtp_email_attachments WHERE correct_column_name = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 05:41:15 --> Undefined array key "fichero_simple"
+in APPPATH\Controllers\DataTransferController.php on line 86.
+ 1 APPPATH\Controllers\DataTransferController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fichero_simple"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 05:41:51 --> Undefined array key "fichero_simple"
+in APPPATH\Controllers\DataTransferController.php on line 86.
+ 1 APPPATH\Controllers\DataTransferController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fichero_simple"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 05:42:52 --> mysqli_sql_exception: Unknown column 'cfdb7_status' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(82): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-02 05:42:52 --> Unknown column 'cfdb7_status' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`, `multilinefile_87cfdb7_file`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, :menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:, :multilinefile_87cfdb7_file:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(82): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 05:43:49 --> mysqli_sql_exception: CONSTRAINT `denuncias.fichero_simple` failed for `app_anticorupcion`.`denuncias` in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(82): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-02 05:43:49 --> CONSTRAINT `denuncias.fichero_simple` failed for `app_anticorupcion`.`denuncias`
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `nombre`, `apellidos`, `menu_documentos`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`, `multilinefile_87cfdb7_file`) VALUES (:id:, :nombre:, :apellidos:, :menu_documentos:, :menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:, :multilinefile_87cfdb7_file:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(82): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 12:07:18 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'app_anticorupci...', 3306, '', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Login.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Login.php(30): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-02 12:07:18 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(30): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 12:42:13 --> mysqli_sql_exception: Table 'app_anticorupcion.users' doesn't exist in engine in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-02 12:42:13 --> Table 'app_anticorupcion.users' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.email,  r.role_name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 12:53:12 --> mysqli_sql_exception: Table 'app_anticorupcion.users' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-02 12:53:12 --> Table 'app_anticorupcion.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.email,  r.role_name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 12:53:35 --> mysqli_sql_exception: Table 'app_anticorupcion.users' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-02 12:53:35 --> Table 'app_anticorupcion.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.email,  r.role_name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 13:05:41 --> mysqli_sql_exception: Table 'app_anticorupciontest.users' doesn't exist in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-02 13:05:41 --> Table 'app_anticorupciontest.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.email,  r.role_name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 13:12:06 --> mysqli_sql_exception: Unknown column 'r.role_name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  u.id, u...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  u.id, u...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  u.id, u...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-02 13:12:06 --> Unknown column 'r.role_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT  u.id, u.username as uname , u.email,  r.role_name FROM users u JOIN roles r ON u.role_id = r.id ')
+ 2 APPPATH\Controllers\Users.php(16): App\Models\UserModel->getuserinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 13:16:00 --> mysqli_sql_exception: Table 'portal_2.wp_db7_forms' doesn't exist in engine in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM w...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM w...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM w...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM w...')
+#4 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-02 13:16:00 --> Table 'portal_2.wp_db7_forms' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\DataTransferController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM wp_db7_forms')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 13:17:16 --> mysqli_sql_exception: Unknown column 'fichero_simple' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(82): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-02 13:17:16 --> Unknown column 'fichero_simple' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `nombre`, `apellidos`, `menu_documentos`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`, `multilinefile_87cfdb7_file`) VALUES (:id:, :nombre:, :apellidos:, :menu_documentos:, :menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:, :multilinefile_87cfdb7_file:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(82): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 13:17:23 --> mysqli_sql_exception: Unknown column 'fichero_simple' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(82): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-02 13:17:23 --> Unknown column 'fichero_simple' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `nombre`, `apellidos`, `menu_documentos`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`, `multilinefile_87cfdb7_file`) VALUES (:id:, :nombre:, :apellidos:, :menu_documentos:, :menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:, :multilinefile_87cfdb7_file:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(82): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 13:18:10 --> Undefined variable $multilineFilePath
+in APPPATH\Controllers\DataTransferController.php on line 76.
+ 1 APPPATH\Controllers\DataTransferController.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $multilineFilePath', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 13:20:40 --> Undefined variable $sourceDir
+in APPPATH\Controllers\DataTransferController.php on line 41.
+ 1 APPPATH\Controllers\DataTransferController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sourceDir', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:23:51 --> File does not exist at https://localhost/webs/portal-anticorupcion/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+CRITICAL - 2024-11-02 13:31:13 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\DataTransferController.php on line 70.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 13:32:11 --> syntax error, unexpected variable "$sourceDir", expecting "function" or "const"
+in APPPATH\Controllers\DataTransferController.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:33:26 --> File does not exist at https://localhost/webs/portal-anticorupcion/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:36:29 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+CRITICAL - 2024-11-02 13:39:42 --> syntax error, unexpected token "else"
+in APPPATH\Controllers\DataTransferController.php on line 78.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:43:23 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:43:38 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:44:11 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:52:17 --> File does not exist at https://localhost/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 13:59:33 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 14:06:08 --> File does not exist at /htdocs/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+CRITICAL - 2024-11-02 14:58:02 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\DataTransferController.php on line 29.
+ 1 APPPATH\Controllers\DataTransferController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 14:58:18 --> mysqli_sql_exception: Unknown column 'cfdb7_status' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(68): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-02 14:58:18 --> Unknown column 'cfdb7_status' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `cfdb7_status`, `nombre`, `apellidos`, `menu_documentos`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`) VALUES (:id:, :cfdb7_status:, :nombre:, :apellidos:, :menu_documentos:, : menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(68): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 14:58:27 --> mysqli_sql_exception: Unknown column 'fichero_simple' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(68): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-02 14:58:27 --> Unknown column 'fichero_simple' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `denuncias` (`id`, `nombre`, `apellidos`, `menu_documentos`, `menu_contacto`, `correo_electronico`, `numero`, `menu_instituciones`, `id_estado`, `direccion_seccion`, `ciudades`, `tipo_denuncia`, `mensaje`, `fichero_simple`) VALUES (:id:, :nombre:, :apellidos:, :menu_documentos:, : menu_contacto:, :correo_electronico:, :numero:, :menu_instituciones:, :id_estado:, :direccion_seccion:, :ciudades:, :tipo_denuncia:, :mensaje:, :fichero_simple:)', [...], false)
+ 2 APPPATH\Controllers\DataTransferController.php(68): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 14:59:31 --> Undefined variable $data
+in APPPATH\Controllers\DataTransferController.php on line 63.
+ 1 APPPATH\Controllers\DataTransferController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->transferData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 15:00:51 --> File does not exist at /var/www/html/webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 15:02:23 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+CRITICAL - 2024-11-02 15:03:43 --> Undefined array key "comentario"
+in APPPATH\Views\reports\edit.php on line 79.
+ 1 APPPATH\Views\reports\edit.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "comentario"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 79)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(130): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('25')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 15:03:50 --> Undefined array key "comentario"
+in APPPATH\Views\reports\edit.php on line 79.
+ 1 APPPATH\Views\reports\edit.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "comentario"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 79)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(130): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 15:24:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(131): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 15:25:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(131): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 15:25:38 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(131): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 15:25:42 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(131): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:08:38 --> Trying to access array offset on value of type null
+in APPPATH\Views\reports\edit.php on line 16.
+ 1 APPPATH\Views\reports\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/edit', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(131): view('reports/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:10:42 --> Invalid file: "reports/asign.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reports/asign.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/asign', [], true)
+ 3 APPPATH\Controllers\DataTransferController.php(131): view('reports/asign', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:20:44 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\DataTransferController.php on line 131.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:22:14 --> Undefined variable $RoleModel
+in APPPATH\Controllers\DataTransferController.php on line 131.
+ 1 APPPATH\Controllers\DataTransferController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $RoleModel', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:22:57 --> Class "App\Controllers\RoleModel" not found
+in APPPATH\Controllers\DataTransferController.php on line 129.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:23:23 --> Attempt to read property "id" on array
+in APPPATH\Views\reports\assign.php on line 92.
+ 1 APPPATH\Views\reports\assign.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assign.php', 92)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assign.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/assign', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(134): view('reports/assign', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:25:32 --> Undefined variable $user_obj
+in APPPATH\Views\reports\assign.php on line 96.
+ 1 APPPATH\Views\reports\assign.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_obj', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assign.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assign.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/assign', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(134): view('reports/assign', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:25:47 --> Undefined array key "role_id"
+in APPPATH\Views\reports\assign.php on line 96.
+ 1 APPPATH\Views\reports\assign.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_id"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assign.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assign.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/assign', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(134): view('reports/assign', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:26:23 --> syntax error, unexpected identifier "id", expecting "]"
+in APPPATH\Views\reports\assign.php on line 96.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/assign', [], true)
+ 3 APPPATH\Controllers\DataTransferController.php(134): view('reports/assign', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:26:39 --> Undefined array key "name"
+in APPPATH\Views\reports\assign.php on line 97.
+ 1 APPPATH\Views\reports\assign.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assign.php', 97)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assign.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/assign', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(134): view('reports/assign', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assign('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:39:45 --> Undefined variable $session
+in APPPATH\Controllers\DataTransferController.php on line 195.
+ 1 APPPATH\Controllers\DataTransferController.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php', 195)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assig_save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 16:58:35 --> Undefined variable $roleId
+in APPPATH\Models\EmailsModel.php on line 33.
+ 1 APPPATH\Models\EmailsModel.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $roleId', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Models\\EmailsModel.php', 33)
+ 2 APPPATH\Controllers\DataTransferController.php(124): App\Models\EmailsModel->GetemailData()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 17:01:11 --> Undefined variable $roleId
+in APPPATH\Models\EmailsModel.php on line 34.
+ 1 APPPATH\Models\EmailsModel.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $roleId', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Models\\EmailsModel.php', 34)
+ 2 APPPATH\Controllers\DataTransferController.php(124): App\Models\EmailsModel->GetemailData()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 17:01:14 --> Undefined variable $roleId
+in APPPATH\Models\EmailsModel.php on line 34.
+ 1 APPPATH\Models\EmailsModel.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $roleId', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Models\\EmailsModel.php', 34)
+ 2 APPPATH\Controllers\DataTransferController.php(124): App\Models\EmailsModel->GetemailData()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 17:02:59 --> mysqli_sql_exception: Unknown column 'r.assigned_role_id' in 'on clause' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `d`.`id`...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`id`...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`id`...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id`...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\EmailsModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(124): App\Models\EmailsModel->GetemailData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-02 17:02:59 --> Unknown column 'r.assigned_role_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id`, `d`.`nombre` as `dname`, `d`.`apellidos`, `d`.`menu_instituciones`, `d`.`numero`, `d`.`direccion_seccion`, `d`.`ciudades`, `d`.`tipo_denuncia`, `d`.`id_estado`, `d`.`mensaje`, `e`.`name`
+FROM `denuncias` `d`
+JOIN `statuses` `e` ON `d`.`id_estado` = `e`.`id`
+JOIN `roles` `r` ON `r`.`assigned_role_id` = `r`.`id`
+WHERE `d`.`assigned_role_id` IS NULL', [], false)
+ 2 APPPATH\Models\EmailsModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DataTransferController.php(124): App\Models\EmailsModel->GetemailData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971094466bc0d4603-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297118343915b7af7d-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297123774b6f6bed7c-multilinefile-87-tare_clases.pdf
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297125480a4276b063-multilinefile-87-test.pdf
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729712719b6d6d85a5e-multilinefile-87-test.pdf
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/17297127517737333e10-multilinefile-87-export-1.pdf
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/172971327535575d52ce-multilinefile-87-export-2.pdf
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729713400d5aa72386f-multilinefile-87-test.pdf
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714252ad29286f34-multilinefile-87-export.pdf
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729714318e9954975f6-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/1729941248dc4c877c96-multilinefile-87-export-4.pdf
+ERROR - 2024-11-02 17:23:50 --> File does not exist at /webs/portal-anticorupcion/wp-content/uploads/cfdb7_uploads/173009925811b9d87a8b-multilinefile-87-export-2.pdf
+CRITICAL - 2024-11-02 17:48:41 --> Invalid file: "denuncias_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('denuncias_view.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('denuncias_view', [], true)
+ 3 APPPATH\Controllers\DataTransferController.php(136): view('denuncias_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-02 17:49:06 --> syntax error, unexpected token "else", expecting end of file
+in APPPATH\Views\reports\index.php on line 13.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 3 APPPATH\Controllers\DataTransferController.php(136): view('reports/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 17:52:08 --> mysqli_sql_exception: Unknown column 'r.name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `d`.`id`...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`id`...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`id`...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id`...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\EmailsModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(125): App\Models\EmailsModel->getEmailData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-02 17:52:08 --> Unknown column 'r.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id`, `d`.`nombre` as `dname`, `d`.`apellidos`, `d`.`menu_instituciones`, `d`.`numero`, `d`.`direccion_seccion`, `d`.`ciudades`, `d`.`tipo_denuncia`, `d`.`id_estado`, `d`.`mensaje`, `e`.`name` as `status_name`, `r`.`name` as `role_name`
+FROM `denuncias` `d`
+JOIN `statuses` `e` ON `d`.`id_estado` = `e`.`id`
+JOIN `roles` `r` ON `d`.`assigned_role_id` = `r`.`id`
+WHERE `d`.`assigned_role_id` IS NULL', [], false)
+ 2 APPPATH\Models\EmailsModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DataTransferController.php(125): App\Models\EmailsModel->getEmailData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-02 17:52:45 --> mysqli_sql_exception: Unknown column 'r.name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `d`.`id`...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`id`...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`id`...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id`...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\EmailsModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(125): App\Models\EmailsModel->getEmailData()
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-02 17:52:45 --> Unknown column 'r.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id`, `d`.`nombre` as `dname`, `d`.`apellidos`, `d`.`menu_instituciones`, `d`.`numero`, `d`.`direccion_seccion`, `d`.`ciudades`, `d`.`tipo_denuncia`, `d`.`id_estado`, `d`.`mensaje`, `e`.`name` as `status_name`, `r`.`name` as `role_name`
+FROM `denuncias` `d`
+JOIN `statuses` `e` ON `d`.`id_estado` = `e`.`id`
+JOIN `roles` `r` ON `d`.`assigned_role_id` = `r`.`id`
+WHERE `d`.`assigned_role_id` IS NULL', [], false)
+ 2 APPPATH\Models\EmailsModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DataTransferController.php(125): App\Models\EmailsModel->getEmailData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

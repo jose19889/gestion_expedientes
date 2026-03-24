@@ -1,0 +1,253 @@
+ERROR - 2023-11-20 11:22:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN cities ON c.city_id = c.id ,
+         JOIN barrios ON c.barrio_id = b.id' at line 4 in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-20 11:22:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN cities ON c.city_id = c.id ,
+         JOIN barrios ON c.barrio_id = b.id' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 11:23:19 --> mysqli_sql_exception: Unknown column 'c.surname' in 'field list' in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-20 11:23:19 --> Unknown column 'c.surname' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 11:24:24 --> mysqli_sql_exception: Unknown column 'b.name' in 'field list' in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-20 11:24:24 --> Unknown column 'b.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 11:26:23 --> mysqli_sql_exception: Unknown column 'b.name' in 'field list' in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-20 11:26:23 --> Unknown column 'b.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 11:28:30 --> mysqli_sql_exception: Not unique table/alias: 'c' in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-20 11:28:30 --> Not unique table/alias: 'c'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 11:28:32 --> mysqli_sql_exception: Not unique table/alias: 'c' in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-20 11:28:32 --> Not unique table/alias: 'c'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 11:28:34 --> mysqli_sql_exception: Not unique table/alias: 'c' in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-20 11:28:34 --> Not unique table/alias: 'c'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Stationmodel.php(24): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Policebranch.php(15): App\Models\StationModel->getcountryinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Policebranch->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 13:13:44 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Roles.php(118): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Roles->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 13:58:12 --> Call to a member function helpers() on null
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 13:59:21 --> Call to a member function helpers() on null
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:00:02 --> Declaration of App\Models\LoginModel::validate($email, $password) must be compatible with CodeIgniter\BaseModel::validate($data): bool
+in APPPATH\Models\LoginModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-20 14:01:29 --> Declaration of App\Models\LoginModel::validate($email, $password) must be compatible with CodeIgniter\BaseModel::validate($data): bool
+in APPPATH\Models\LoginModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-20 14:02:02 --> Declaration of App\Models\LoginModel::validate($email, $password) must be compatible with CodeIgniter\BaseModel::validate($data): bool
+in APPPATH\Models\LoginModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-20 14:02:10 --> Declaration of App\Models\LoginModel::validate($email, $password) must be compatible with CodeIgniter\BaseModel::validate($data): bool
+in APPPATH\Models\LoginModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-20 14:04:03 --> Declaration of App\Models\LoginModel::validate($email, $password) must be compatible with CodeIgniter\BaseModel::validate($data): bool
+in APPPATH\Models\LoginModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-20 14:04:48 --> Declaration of App\Models\LoginModel::validate($email, $password) must be compatible with CodeIgniter\BaseModel::validate($data): bool
+in APPPATH\Models\LoginModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-20 14:07:18 --> Class 'App\Controllers\UserModel' not found
+in APPPATH\Controllers\Login.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:08:42 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:09:09 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:10:24 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:12:24 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:16:59 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:21:51 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:21:59 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:22:33 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:28:19 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:28:34 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:30:34 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

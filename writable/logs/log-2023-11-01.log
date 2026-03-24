@@ -1,0 +1,11 @@
+CRITICAL - 2023-11-01 12:03:12 --> Invalid argument supplied for foreach()
+in APPPATH\Views\users\edit.php on line 55.
+ 1 APPPATH\Views\users\edit.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Program Files\\Ampps\\www\\apps\\gestor_denuncias\\app\\Views\\users\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Users.php(117): view()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

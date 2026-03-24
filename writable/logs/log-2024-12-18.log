@@ -1,0 +1,124 @@
+CRITICAL - 2024-12-18 12:49:32 --> Undefined variable $emailsModel
+in APPPATH\Controllers\Users.php on line 25.
+ 1 APPPATH\Controllers\Users.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emailsModel', 'C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Controllers\\Users.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-18 12:50:10 --> Undefined variable $emailsModel
+in APPPATH\Controllers\Users.php on line 25.
+ 1 APPPATH\Controllers\Users.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emailsModel', 'C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Controllers\\Users.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-18 12:50:12 --> Undefined variable $emailsModel
+in APPPATH\Controllers\Users.php on line 25.
+ 1 APPPATH\Controllers\Users.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emailsModel', 'C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Controllers\\Users.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-18 12:50:33 --> Undefined variable $emailsModel
+in APPPATH\Controllers\Users.php on line 25.
+ 1 APPPATH\Controllers\Users.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emailsModel', 'C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Controllers\\Users.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-18 12:51:11 --> Undefined variable $total_denuncias
+in APPPATH\Views\app\shortcut.php on line 6.
+ 1 APPPATH\Views\app\shortcut.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_denuncias', 'C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\app\\shortcut.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\app\\shortcut.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/shortcut', null, true)
+ 5 APPPATH\Views\users\create.php(28): CodeIgniter\View\View->include('app/shortcut')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\users\\create.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('users/create', [], true)
+ 9 APPPATH\Controllers\Users.php(44): view('users/create', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->create()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-18 12:51:44 --> Undefined variable $total_denuncias
+in APPPATH\Views\app\shortcut.php on line 6.
+ 1 APPPATH\Views\app\shortcut.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_denuncias', 'C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\app\\shortcut.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\app\\shortcut.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/shortcut', null, true)
+ 5 APPPATH\Views\users\edit.php(28): CodeIgniter\View\View->include('app/shortcut')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\users\\edit.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('users/edit', [], true)
+ 9 APPPATH\Controllers\Users.php(126): view('users/edit', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->edit('12')
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-18 12:55:53 --> Undefined variable $total_denuncias
+in APPPATH\Views\app\shortcut.php on line 6.
+ 1 APPPATH\Views\app\shortcut.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_denuncias', 'C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\app\\shortcut.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\app\\shortcut.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/shortcut', null, true)
+ 5 APPPATH\Views\auth\change-pass.php(28): CodeIgniter\View\View->include('app/shortcut')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\auth\\change-pass.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('auth/change-pass', [], true)
+ 9 APPPATH\Controllers\Users.php(215): view('auth/change-pass')
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->changePass()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-18 12:56:01 --> Undefined variable $total_denuncias
+in APPPATH\Views\app\shortcut.php on line 6.
+ 1 APPPATH\Views\app\shortcut.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_denuncias', 'C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\app\\shortcut.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\app\\shortcut.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/shortcut', null, true)
+ 5 APPPATH\Views\auth\change-pass.php(28): CodeIgniter\View\View->include('app/shortcut')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Views\\auth\\change-pass.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('auth/change-pass', [], true)
+ 9 APPPATH\Controllers\Users.php(215): view('auth/change-pass')
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->changePass()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-18 13:32:07 --> Unclosed '{' on line 9
+in APPPATH\Controllers\Users.php on line 223.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Controllers\\Users.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Users')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Users')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Users', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-18 13:33:36 --> Unclosed '{' on line 9
+in APPPATH\Controllers\Users.php on line 225.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Controllers\\Users.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Users')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Users')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Users', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-18 13:33:38 --> Unclosed '{' on line 9
+in APPPATH\Controllers\Users.php on line 225.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Controllers\\Users.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Users')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Users')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Users', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-18 13:43:49 --> syntax error, unexpected variable "$validation", expecting ";" or "{"
+in APPPATH\Controllers\Users.php on line 173.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\app_anticorrupcion\\app\\Controllers\\Users.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Users')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Users')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Users', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

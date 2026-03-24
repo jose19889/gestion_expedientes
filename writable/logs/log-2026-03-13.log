@@ -1,0 +1,123 @@
+CRITICAL - 2026-03-13 10:13:32 --> Invalid file: "backup/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backup/index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backup/index', [], true)
+ 3 APPPATH\Controllers\Migration.php(36): view('backup/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 10:13:52 --> Invalid file: "migration/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('migration/index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('migration/index', [], true)
+ 3 APPPATH\Controllers\Migration.php(36): view('migration/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 10:13:56 --> Invalid file: "migration/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('migration/index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('migration/index', [], true)
+ 3 APPPATH\Controllers\Migration.php(36): view('migration/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 14:27:45 --> ZipArchive::close(): Can't open file: No such file or directory
+in APPPATH\Controllers\Migration.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::close(): Can\'t open file: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 146)
+ 2 APPPATH\Controllers\Migration.php(146): ZipArchive->close()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->backupFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 14:29:24 --> ZipArchive::close(): Can't open file: No such file or directory
+in APPPATH\Controllers\Migration.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::close(): Can\'t open file: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 146)
+ 2 APPPATH\Controllers\Migration.php(146): ZipArchive->close()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->backupFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 14:38:08 --> ZipArchive::close(): Write error: No space left on device
+in APPPATH\Controllers\Migration.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::close(): Write error: No space left on device', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 146)
+ 2 APPPATH\Controllers\Migration.php(146): ZipArchive->close()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->backupFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 14:38:08 --> ZipArchive::close(): Write error: No space left on device
+in APPPATH\Controllers\Migration.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::close(): Write error: No space left on device', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 146)
+ 2 APPPATH\Controllers\Migration.php(146): ZipArchive->close()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->backupFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 14:40:04 --> ZipArchive::close(): Write error: No space left on device
+in APPPATH\Controllers\Migration.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::close(): Write error: No space left on device', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 146)
+ 2 APPPATH\Controllers\Migration.php(146): ZipArchive->close()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->backupFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 14:41:43 --> ZipArchive::close(): Write error: No space left on device
+in APPPATH\Controllers\Migration.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::close(): Write error: No space left on device', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 146)
+ 2 APPPATH\Controllers\Migration.php(146): ZipArchive->close()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->backupFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 14:45:04 --> ZipArchive::close(): Write error: No space left on device
+in APPPATH\Controllers\Migration.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::close(): Write error: No space left on device', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 146)
+ 2 APPPATH\Controllers\Migration.php(146): ZipArchive->close()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->backupFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 14:45:04 --> ZipArchive::close(): Write error: No space left on device
+in APPPATH\Controllers\Migration.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::close(): Write error: No space left on device', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 146)
+ 2 APPPATH\Controllers\Migration.php(146): ZipArchive->close()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->backupFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 15:01:30 --> ZipArchive::close(): Can't open file: No such file or directory
+in APPPATH\Controllers\Migration.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::close(): Can\'t open file: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 146)
+ 2 APPPATH\Controllers\Migration.php(146): ZipArchive->close()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->backupFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 15:04:36 --> unlink(C:\xampp\htdocs\apps\gestion_expedientes\writable\backups/backup_project_20260313_145727.zip.1632e25c): Resource temporarily unavailable
+in APPPATH\Controllers\Migration.php on line 201.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\writable\\backups/backup_project_20260313_145727.zip.1632e25c): Resource temporarily unavailable', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 201)
+ 2 APPPATH\Controllers\Migration.php(201): unlink('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\writable\\backups/backup_project_20260313_145727.zip.1632e25c')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->delete('backup_project_20260313_145727.zip.1632e25c')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 15:04:49 --> unlink(C:\xampp\htdocs\apps\gestion_expedientes\writable\backups/backup_project_20260313_145727.zip.1632e25c): Resource temporarily unavailable
+in APPPATH\Controllers\Migration.php on line 201.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\writable\\backups/backup_project_20260313_145727.zip.1632e25c): Resource temporarily unavailable', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 201)
+ 2 APPPATH\Controllers\Migration.php(201): unlink('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\writable\\backups/backup_project_20260313_145727.zip.1632e25c')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->delete('backup_project_20260313_145727.zip.1632e25c')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-13 15:06:22 --> ZipArchive::close(): Can't open file: No such file or directory
+in APPPATH\Controllers\Migration.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::close(): Can\'t open file: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Migration.php', 146)
+ 2 APPPATH\Controllers\Migration.php(146): ZipArchive->close()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Migration->backupFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migration))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

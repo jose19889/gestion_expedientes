@@ -1,0 +1,501 @@
+CRITICAL - 2023-10-30 13:55:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 46.
+ 1 APPPATH\Controllers\Users.php(21): App\Models\UserModel->getusersroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 13:57:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 45.
+ 1 APPPATH\Controllers\Users.php(21): App\Models\UserModel->getusersroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:02:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 46.
+ 1 APPPATH\Controllers\Users.php(21): App\Models\UserModel->getusersroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:02:44 --> Call to undefined method App\Models\UserModel::getusersroles
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Users.php(21): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:03:09 --> Call to undefined method App\Models\UserModel::getusersroles
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Users.php(21): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:03:10 --> Call to undefined method App\Models\UserModel::getusersroles
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Users.php(21): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:03:20 --> Call to undefined method App\Models\UserModel::getusersroles
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Users.php(21): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:03:22 --> Call to undefined method App\Models\UserModel::getusersroles
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Users.php(21): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:05:14 --> Call to undefined method App\Models\UserModel::getusersroles
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Users.php(21): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:05:17 --> Call to undefined method App\Models\UserModel::getusersroles
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Users.php(21): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:06:11 --> Call to a member function result() on null
+in APPPATH\Views\users\index.php on line 20.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Users.php(27): view()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:06:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 22.
+ 1 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:08:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 22.
+ 1 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:08:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\UserModel.php on line 22.
+ 1 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:28:32 --> Call to undefined method App\Models\UserModel::getuseroles
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Users.php(25): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:28:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::findAll()
+in APPPATH\Controllers\Users.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:29:08 --> Call to a member function result() on null
+in APPPATH\Views\users\index.php on line 20.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Users.php(28): view()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:29:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Views\users\index.php on line 20.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Users.php(28): view()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:30:29 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\Users.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:30:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Views\users\index.php on line 20.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Users.php(28): view()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:31:05 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Views\users\index.php on line 20.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Users.php(28): view()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:38:25 --> mysqli_sql_exception: Table 'app_gestion_denuncias.my_table' doesn't exist in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:38:25 --> Table 'app_gestion_denuncias.my_table' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:39:02 --> Call to a member function result() on null
+in APPPATH\Views\users\index.php on line 20.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Users.php(28): view()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:39:35 --> mysqli_sql_exception: Unknown column 'username' in 'field list' in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:39:35 --> Unknown column 'username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:40:39 --> mysqli_sql_exception: Unknown column 'username' in 'field list' in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:40:39 --> Unknown column 'username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:41:37 --> Call to a member function result() on null
+in APPPATH\Views\users\index.php on line 20.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Users.php(28): view()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:42:19 --> Call to a member function result() on null
+in APPPATH\Views\users\index.php on line 20.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Users.php(28): view()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:44:18 --> Call to a member function result() on null
+in APPPATH\Views\users\index.php on line 20.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Users.php(28): view()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:44:19 --> Call to a member function result() on null
+in APPPATH\Views\users\index.php on line 20.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Users.php(28): view()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 14:46:11 --> Call to undefined method App\Models\UserModel::getuseroles
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Users.php(25): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:47:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ELECT ProductID, ProductName, CategoryName
+        FROM Products
+        INNER' at line 1 in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:47:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ELECT ProductID, ProductName, CategoryName
+        FROM Products
+        INNER' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:47:39 --> mysqli_sql_exception: Table 'app_gestion_denuncias.products' doesn't exist in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:47:40 --> Table 'app_gestion_denuncias.products' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:49:28 --> mysqli_sql_exception: Column 'name' in field list is ambiguous in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:49:28 --> Column 'name' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:49:52 --> mysqli_sql_exception: Column 'name' in field list is ambiguous in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:49:52 --> Column 'name' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:49:55 --> mysqli_sql_exception: Column 'name' in field list is ambiguous in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:49:55 --> Column 'name' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:50:16 --> mysqli_sql_exception: Column 'name' in field list is ambiguous in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:50:16 --> Column 'name' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:50:18 --> mysqli_sql_exception: Column 'name' in field list is ambiguous in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:50:18 --> Column 'name' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:55:57 --> mysqli_sql_exception: Column 'name' in field list is ambiguous in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:55:57 --> Column 'name' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:58:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users' at line 1 in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:58:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:59:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'From users' at line 1 in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:59:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'From users' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 14:59:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* From users' at line 1 in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Users->index()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-30 14:59:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* From users' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\UserModel.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Users.php(25): App\Models\UserModel->getuseroles()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,198 @@
+[13-Mar-2025 15:27:36 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/../app/Config/Paths.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 34
+[13-Mar-2025 15:27:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/../app/Config/Paths.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 34
+[13-Mar-2025 15:32:06 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:32:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:32:18 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:32:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:32:21 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:32:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:37:12 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:37:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:37:16 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:37:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:37:19 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:37:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:37:20 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:37:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:37:53 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:37:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:40:53 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:40:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:41:12 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:41:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:41:17 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:41:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:41:18 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:41:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:41:21 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:41:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:41:24 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[13-Mar-2025 15:41:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:30:41 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:30:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:30:47 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:30:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:31:10 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:31:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:31:16 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:31:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:31:18 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:31:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:31:22 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:31:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:40:14 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:40:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:40:16 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:40:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:42:51 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:42:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:51:24 UTC] PHP Warning:  require(/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php): Failed to open stream: No such file or directory in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 09:51:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Config/../system/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php on line 40
+[14-Mar-2025 10:13:12 UTC] PHP Fatal error:  Uncaught CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "/cache/". in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/Handlers/FileHandler.php:64
+Stack trace:
+#0 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/Handlers/FileHandler.php(64): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite()
+#1 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/CacheFactory.php(60): CodeIgniter\Cache\Handlers\FileHandler->__construct()
+#2 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(124): CodeIgniter\Cache\CacheFactory::getHandler()
+#3 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::cache()
+#4 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#5 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(119): CodeIgniter\Config\BaseService::getSharedInstance()
+#6 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::cache()
+#7 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(449): CodeIgniter\Config\BaseService::__callStatic()
+#8 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::responsecache()
+#9 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#10 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(445): CodeIgniter\Config\BaseService::getSharedInstance()
+#11 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::responsecache()
+#12 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/CodeIgniter.php(194): CodeIgniter\Config\BaseService::__callStatic()
+#13 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(159): CodeIgniter\CodeIgniter->__construct()
+#14 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::codeigniter()
+#15 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#16 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(154): CodeIgniter\Config\BaseService::getSharedInstance()
+#17 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::codeigniter()
+#18 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php(66): CodeIgniter\Config\BaseService::__callStatic()
+#19 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/Handlers/FileHandler.php on line 64
+[14-Mar-2025 10:13:22 UTC] PHP Fatal error:  Uncaught CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "/cache/". in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/Handlers/FileHandler.php:64
+Stack trace:
+#0 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/Handlers/FileHandler.php(64): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite()
+#1 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/CacheFactory.php(60): CodeIgniter\Cache\Handlers\FileHandler->__construct()
+#2 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(124): CodeIgniter\Cache\CacheFactory::getHandler()
+#3 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::cache()
+#4 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#5 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(119): CodeIgniter\Config\BaseService::getSharedInstance()
+#6 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::cache()
+#7 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(449): CodeIgniter\Config\BaseService::__callStatic()
+#8 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::responsecache()
+#9 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#10 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(445): CodeIgniter\Config\BaseService::getSharedInstance()
+#11 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::responsecache()
+#12 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/CodeIgniter.php(194): CodeIgniter\Config\BaseService::__callStatic()
+#13 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(159): CodeIgniter\CodeIgniter->__construct()
+#14 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::codeigniter()
+#15 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#16 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(154): CodeIgniter\Config\BaseService::getSharedInstance()
+#17 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::codeigniter()
+#18 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php(66): CodeIgniter\Config\BaseService::__callStatic()
+#19 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/Handlers/FileHandler.php on line 64
+[14-Mar-2025 10:13:30 UTC] PHP Fatal error:  Uncaught CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "/cache/". in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/Handlers/FileHandler.php:64
+Stack trace:
+#0 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/Handlers/FileHandler.php(64): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite()
+#1 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/CacheFactory.php(60): CodeIgniter\Cache\Handlers\FileHandler->__construct()
+#2 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(124): CodeIgniter\Cache\CacheFactory::getHandler()
+#3 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::cache()
+#4 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#5 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(119): CodeIgniter\Config\BaseService::getSharedInstance()
+#6 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::cache()
+#7 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(449): CodeIgniter\Config\BaseService::__callStatic()
+#8 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::responsecache()
+#9 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#10 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(445): CodeIgniter\Config\BaseService::getSharedInstance()
+#11 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::responsecache()
+#12 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/CodeIgniter.php(194): CodeIgniter\Config\BaseService::__callStatic()
+#13 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(159): CodeIgniter\CodeIgniter->__construct()
+#14 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::codeigniter()
+#15 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#16 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/Services.php(154): CodeIgniter\Config\BaseService::getSharedInstance()
+#17 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Config/BaseService.php(258): CodeIgniter\Config\Services::codeigniter()
+#18 /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/index.php(66): CodeIgniter\Config\BaseService::__callStatic()
+#19 {main}
+  thrown in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/system/Cache/Handlers/FileHandler.php on line 64
+[23-Mar-2025 10:43:17 UTC] PHP Fatal error:  Cannot redeclare App\Models\EmailsModel::GetDenunciaStatistics() in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Models/EmailsModel.php on line 108
+[15-May-2025 13:37:05 UTC] PHP Fatal error:  Trait "Dompdf\Dompdf\Dompdf" not found in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Controllers/DataTransferController.php on line 14
+[15-May-2025 13:37:10 UTC] PHP Fatal error:  Trait "Dompdf\Dompdf\Dompdf" not found in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Controllers/DataTransferController.php on line 14
+[15-May-2025 13:49:44 UTC] PHP Fatal error:  Trait "Dompdf\Dompdf\Dompdf" not found in /home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Controllers/DataTransferController.php on line 14

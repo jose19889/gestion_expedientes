@@ -1,0 +1,126 @@
+CRITICAL - 2025-03-26 07:53:39 --> Call to undefined method App\Models\EmailsModel::Get_assigned
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/DataTransferController.php(191): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\DataTransferController->assigned()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 07:54:07 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 07:54:11 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 07:54:24 --> Call to undefined method App\Models\EmailsModel::getDenunciaTypes
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/DataTransferController.php(322): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\DataTransferController->statistics()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 07:56:10 --> Call to undefined method App\Models\EmailsModel::Get_assigned
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/DataTransferController.php(191): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\DataTransferController->assigned()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 07:56:56 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 08:25:06 --> Undefined variable $denunciaTypes
+in APPPATH/Views/reports/statistics.php on line 61.
+ 1 APPPATH/Views/reports/statistics.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Views/reports/statistics.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DataTransferController.php(341): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\DataTransferController->statistics()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 08:28:22 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 08:28:27 --> Undefined variable $total_denuncias
+in APPPATH/Views/app/shortcut.php on line 6.
+ 1 APPPATH/Views/app/shortcut.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Views/app/shortcut.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(467): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/roles/index.php(29): CodeIgniter\View\View->include()
+ 6 SYSTEMPATH/View/View.php(226): include('/home/polc18dxi70o/public_html/ademy-groups.com/gestor_denuncias/app/Views/roles/index.php')
+ 7 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 9 APPPATH/Controllers/Roles.php(21): view()
+10 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Roles->index()
+11 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 08:29:52 --> Call to undefined method App\Models\EmailsModel::Get_assigned
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/DataTransferController.php(191): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\DataTransferController->assigned()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 08:34:29 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 08:35:14 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 08:35:23 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 08:54:11 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 08:55:43 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 08:56:57 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 09:01:00 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-26 09:01:27 --> Call to undefined function App\Controllers\hasRole()
+in APPPATH/Controllers/Users.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

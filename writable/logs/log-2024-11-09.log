@@ -1,0 +1,234 @@
+CRITICAL - 2024-11-09 11:46:37 --> Call to a member function findAll() on array
+in APPPATH\Controllers\DataTransferController.php on line 140.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:47:33 --> Undefined array key "estado"
+in APPPATH\Views\reports\index.php on line 78.
+ 1 APPPATH\Views\reports\index.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 78)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(153): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:50:49 --> syntax error, unexpected token "/"
+in APPPATH\Controllers\DataTransferController.php on line 144.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:52:13 --> Undefined array key "estado"
+in APPPATH\Views\reports\index.php on line 78.
+ 1 APPPATH\Views\reports\index.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php', 78)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(153): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:53:50 --> Call to a member function findAll() on array
+in APPPATH\Controllers\DataTransferController.php on line 140.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 12:25:34 --> Undefined array key "name"
+in APPPATH\Views\users\create.php on line 58.
+ 1 APPPATH\Views\users\create.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\users\\create.php', 58)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\users\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('users/create', [], true)
+ 5 APPPATH\Controllers\Users.php(42): view('users/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->create()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 12:25:49 --> Undefined array key "name"
+in APPPATH\Views\users\create.php on line 58.
+ 1 APPPATH\Views\users\create.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\users\\create.php', 58)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\users\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('users/create', [], true)
+ 5 APPPATH\Controllers\Users.php(42): view('users/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->create()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:24:59 --> Undefined array key "name"
+in APPPATH\Views\users\edit.php on line 20.
+ 1 APPPATH\Views\users\edit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\users\\edit.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\users\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('users/edit', [], true)
+ 5 APPPATH\Controllers\Users.php(123): view('users/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->edit('16')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:54:26 --> syntax error, unexpected identifier "home", expecting ")"
+in APPPATH\Config\Routes.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:55:02 --> syntax error, unexpected token "(", expecting variable
+in APPPATH\Controllers\DataTransferController.php on line 153.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:55:26 --> syntax error, unexpected token "(", expecting variable
+in APPPATH\Controllers\DataTransferController.php on line 153.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:56:15 --> Undefined array key "role_name"
+in APPPATH\Views\reports\assigned.php on line 77.
+ 1 APPPATH\Views\reports\assigned.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assigned.php', 77)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assigned.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/assigned', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(200): view('reports/assigned', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assigned()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:56:17 --> Undefined array key "role_name"
+in APPPATH\Views\reports\assigned.php on line 77.
+ 1 APPPATH\Views\reports\assigned.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assigned.php', 77)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assigned.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/assigned', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(200): view('reports/assigned', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assigned()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 13:58:07 --> mysqli_sql_exception: Unknown column 'r.role_name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `d`.`id`...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`id`...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`id`...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id`...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\EmailsModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(139): App\Models\EmailsModel->GetemailData('', '', '')
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-09 13:58:07 --> Unknown column 'r.role_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id`, `d`.`nombre`, `d`.`apellidos`, `d`.`menu_instituciones`, `d`.`numero`, `d`.`direccion_seccion`, `d`.`ciudades`, `d`.`tipo_denuncia`, `d`.`id_estado`, `d`.`mensaje`, `e`.`name` as `estado`, `r`.`role_name` as `roles`
+FROM `denuncias` `d`
+LEFT JOIN `statuses` `e` ON `d`.`id_estado` = `e`.`id`', [], false)
+ 2 APPPATH\Models\EmailsModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DataTransferController.php(139): App\Models\EmailsModel->GetemailData('', '', '')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:59:16 --> syntax error, unexpected token "->"
+in APPPATH\Models\EmailsModel.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Models\\EmailsModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\EmailsModel')
+ 3 APPPATH\Controllers\DataTransferController.php(106): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\EmailsModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 13:59:39 --> mysqli_sql_exception: Unknown column 'r.role_name' in 'field list' in C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `d`.`id`...', 0)
+#1 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`id`...')
+#2 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`id`...')
+#3 C:\xampp\htdocs\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id`...', Array, false)
+#4 C:\xampp\htdocs\apps\gestor_denuncias\app\Models\EmailsModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestor_denuncias\app\Controllers\DataTransferController.php(139): App\Models\EmailsModel->GetemailData('', '', '')
+#6 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+#7 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+#8 C:\xampp\htdocs\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-09 13:59:39 --> Unknown column 'r.role_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id`, `d`.`nombre`, `d`.`apellidos`, `d`.`menu_instituciones`, `d`.`numero`, `d`.`direccion_seccion`, `d`.`ciudades`, `d`.`tipo_denuncia`, `d`.`id_estado`, `d`.`mensaje`, `e`.`name` as `estado`, `r`.`role_name` as `roles`
+FROM `denuncias` `d`
+LEFT JOIN `statuses` `e` ON `d`.`id_estado` = `e`.`id`
+LEFT JOIN `roles` ON `d`.`assigned_role_id` = `r`.`id`', [], false)
+ 2 APPPATH\Models\EmailsModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DataTransferController.php(139): App\Models\EmailsModel->GetemailData('', '', '')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->reports()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 14:00:29 --> Undefined array key "role_name"
+in APPPATH\Views\reports\assigned.php on line 77.
+ 1 APPPATH\Views\reports\assigned.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assigned.php', 77)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assigned.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/assigned', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(200): view('reports/assigned', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assigned()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 14:02:32 --> syntax error, unexpected token "!"
+in APPPATH\Controllers\DataTransferController.php on line 187.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Controllers\\DataTransferController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DataTransferController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DataTransferController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DataTransferController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 15:14:29 --> Call to a member function where() on array
+in APPPATH\Controllers\DataTransferController.php on line 193.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assigned()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 15:19:50 --> Undefined array key "roles"
+in APPPATH\Views\reports\assigned.php on line 77.
+ 1 APPPATH\Views\reports\assigned.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "roles"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assigned.php', 77)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assigned.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/assigned', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(203): view('reports/assigned', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assigned()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 15:25:16 --> Object of class App\Models\EmailsModel could not be converted to string
+in APPPATH\Controllers\DataTransferController.php on line 192.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assigned()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 15:25:33 --> Undefined array key "assigned_role_id"
+in APPPATH\Views\reports\assigned.php on line 77.
+ 1 APPPATH\Views\reports\assigned.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "assigned_role_id"', 'C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assigned.php', 77)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestor_denuncias\\app\\Views\\reports\\assigned.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reports/assigned', [], true)
+ 5 APPPATH\Controllers\DataTransferController.php(203): view('reports/assigned', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataTransferController->assigned()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTransferController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

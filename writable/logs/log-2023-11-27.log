@@ -1,0 +1,130 @@
+CRITICAL - 2023-11-27 07:56:25 --> Call to a member function validate() on null
+in APPPATH\Controllers\Login.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 07:58:33 --> Call to a member function validate() on null
+in APPPATH\Controllers\Login.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 07:58:50 --> Call to a member function validate() on null
+in APPPATH\Controllers\Login.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 07:58:58 --> Call to a member function validate() on null
+in APPPATH\Controllers\Login.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 08:04:46 --> Object of class App\Models\UserModel could not be converted to string
+in APPPATH\Controllers\Login.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 08:07:43 --> Object of class CodeIgniter\Database\MySQLi\Builder could not be converted to string
+in APPPATH\Controllers\Login.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 08:07:58 --> Object of class App\Models\UserModel could not be converted to string
+in APPPATH\Controllers\Login.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 08:13:54 --> Call to a member function num_rows() on bool
+in APPPATH\Controllers\Login.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 08:27:29 --> Call to a member function num_rows() on bool
+in APPPATH\Controllers\Login.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 08:27:56 --> Call to a member function row_array() on bool
+in APPPATH\Controllers\Login.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 08:28:09 --> Call to a member function set_userdata() on null
+in APPPATH\Controllers\Login.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-27 08:37:55 --> mysqli_sql_exception: Unknown column 'user_email' in 'where clause' in C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Program Files\Ampps\www\apps\gestor_denuncias\app\Controllers\Login.php(28): CodeIgniter\BaseModel->first()
+#7 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#8 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 C:\Program Files\Ampps\www\apps\gestor_denuncias\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Program Files\Ampps\www\apps\gestor_denuncias\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-27 08:37:55 --> Unknown column 'user_email' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(28): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 08:55:05 --> Call to undefined function set_value()
+in APPPATH\Views\auth\login.php on line 88.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Login.php(16): view()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 09:51:25 --> Call to a member function post() on null
+in APPPATH\Controllers\Login.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 09:53:22 --> Call to a member function validate() on null
+in APPPATH\Controllers\Login.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 09:54:00 --> Object of class App\Models\UserModel could not be converted to string
+in APPPATH\Controllers\Login.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 09:54:11 --> Call to a member function num_rows() on bool
+in APPPATH\Controllers\Login.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 10:42:00 --> Call to a member function set_rules() on null
+in APPPATH\Controllers\Login.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
