@@ -48,22 +48,6 @@ $routes->get('sign-form', 'Register::index');
 
 /////////////////////////////////////////////////////
 
-///////////     XNFER DATA FROM WP DB TO CODEGNITER DB  ////////////
-$routes->get('transfer', 'DataTransfer::transfer');
-
-$routes->get('transferData', 'DataTransferController::transferData');//test purposes
-$routes->post('transferData', 'DataTransferController::transferData');
-
-
-$routes->get('reports', 'DataTransferController::reports');
-$routes->get('reports-edit/(:num)', 'DataTransferController::edit/$1');
-$routes->get('reports-exportpdf/(:num)', 'DataTransferController::exportPdf/$1');
-
-$routes->get('reports-assign/(:num)', 'DataTransferController::assign/$1');
-$routes->post('reports-update', 'DataTransferController::update');
-$routes->post('reports-assign-save', 'DataTransferController::assig_save');
-$routes->get('reports-assigned', 'DataTransferController::assigned');
-$routes->get('reports-stats', 'DataTransferController::statistics');
 
 //////////////////////////////////
 /////////// HOME

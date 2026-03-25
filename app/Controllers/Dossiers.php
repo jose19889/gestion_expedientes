@@ -8,9 +8,13 @@ use App\Models\TipoDossierModel;
 use App\Models\DeptsModel; // tu modelo de departamentos
 use App\Models\EstadoModel;
 use App\Models\FileModel;
+use App\Models\NotificationModel;
 use CodeIgniter\Controller;
 use Dompdf\Dompdf;
 use Dompdf\Options;
+use App\Services\NotificationService;
+use Config\Database;
+
 
 require_once APPPATH . 'ThirdParty/phpqrcode/qrlib.php';
 //require_once APPPATH . 'ThirdParty/dompdf/autoload.inc.php';
@@ -31,56 +35,62 @@ class Dossiers extends BaseController
     }
 
 public function index()
-    {
-        $session = session();
+{
+    $session = session();
 
-        // Datos de usuario logueado
-        $userId      = $session->get('id');
-        $userRoleId  = $session->get('role_id');
-        $userDeptId  = $session->get('departamento_id');
+    // Datos de usuario logueado
+    $userId      = $session->get('user_id');
+    $userRoleId  = $session->get('role_id');
+    $userDeptId  = $session->get('departamento_id');
 
-        // Modelos
-        $dossierModel      = new DossierModel();
-        $departamentoModel = new DeptsModel();
-        $estadoModel       = new EstadoModel();
+    // Modelos
+    $dossierModel      = new DossierModel();
+    $departamentoModel = new DeptsModel();
+    $estadoModel       = new EstadoModel();
+    $notificacionModel = new NotificationModel();
 
-        // Filtros desde GET
-        $filtros = [
-            'departamento' => $this->request->getGet('departamento'),
-            'estado'       => $this->request->getGet('estado'),
-            'prioridad'    => $this->request->getGet('prioridad'),
-        ];
+    // Filtros
+    $filtros = [
+        'departamento' => $this->request->getGet('departamento'),
+        'estado'       => $this->request->getGet('estado'),
+        'prioridad'    => $this->request->getGet('prioridad'),
+    ];
 
-        // Obtener expedientes según rol y asignaciones
-        $expedientes = $dossierModel->getExpedientesData($userId, $userRoleId, $userDeptId, $filtros);
+    // Expedientes
+    $expedientes = $dossierModel->getExpedientesData($userId, $userRoleId, $userDeptId, $filtros);
 
-        // Datos para los selects
-        $departamentos = $departamentoModel->getDepartamentos();
-        $estados       = $estadoModel->orderBy('orden', 'ASC')->findAll();
+    // Datos para selects
+    $departamentos = $departamentoModel->getDepartamentos();
+    $estados       = $estadoModel->orderBy('orden', 'ASC')->findAll();
 
-        // Pasar datos a la vista, incluyendo info de rol y usuario para permisos
-        $data = [
-            'expedientes'   => $expedientes,
-            'departamentos' => $departamentos,
-            'estados'       => $estados,
-            'filtros'       => $filtros,
-            'userRoleId'    => $userRoleId,
-            'userId'        => $userId
-        ];
+    // 🔔 Notificaciones del usuario
+    $notificaciones = $notificacionModel
+    ->where('usuario_id', $userId)
+    ->orderBy('created_at', 'DESC')
+    ->limit(10)
+    ->find();
 
-      // Ver todo lo que hay en sesión
-    /*echo '<pre>';
-    print_r($session->get());  // <--- esto te mostrará todos los datos de sesión
-    echo '</pre>';
+    $unreadCount = $notificacionModel
+        ->where('usuario_id', $userId)
+        ->where('leido', 0)
+        ->countAllResults();
 
-    $userRoleId  = $session->get('role_id') ?? 'NO ASIGNADO';
-    $userDeptId  = $session->get('departamento_id') ?? 'NO ASIGNADO';
-    
-    echo "Rol: $userRoleId | Departamento: $userDeptId";*/
+    // Data final
+    $data = [
+        'expedientes'   => $expedientes,
+        'departamentos' => $departamentos,
+        'estados'       => $estados,
+        'filtros'       => $filtros,
+        'userRoleId'    => $userRoleId,
+        'userId'        => $userId,
 
-       return view('dossier/index', $data);  // la vista se cargará después
-    }
-  
+        // 🔔 nuevos datos
+        'notificaciones' => $notificaciones,
+        'unreadCount'    => $unreadCount
+    ];
+echo session()->get('user_id');
+    return view('dossier/index', $data);
+}
 
     public function create()
 {
@@ -514,7 +524,12 @@ public function UpdateMovement($id)
         'departamento_actual' => $departamentoDestino
     ]);
 
-    // Registrar movimiento histórico
+    // 🔔 Notificaciones (CORREGIDO)
+    $notificacionService = new \App\Services\NotificationService(\Config\Database::connect());
+
+    $notificacionService->notificarCambioDepartamento($id, $departamentoDestino);
+
+    // 📜 Registrar movimiento histórico
     $movModel->insert([
         'expediente_id' => $id,
         'departamento_origen' => $departamentoOrigen,
@@ -529,7 +544,14 @@ public function UpdateMovement($id)
     return redirect()->to('/dossiers')->with('success','Expediente movido correctamente');
 }
 
-
+public function getNotificacionesUsuario($usuarioId)
+{
+    return $this->db->table('notificaciones')
+        ->where('usuario_id', $usuarioId)
+        ->orderBy('created_at', 'DESC')
+        ->get()
+        ->getResult();
+}
 public function view($id) {
     // 1. Obtenemos los datos básicos del expediente
     $data['expediente'] = $this->DossierModel->find($id); 
@@ -538,6 +560,13 @@ public function view($id) {
     $data['movimientos'] = $this->DossierModel->get_by_id($id);
     
     return view('dossier/view', $data);
+}
+
+public function marcarComoLeida($id)
+{
+    return $this->db->table('notificaciones')
+        ->where('id', $id)
+        ->update(['leida' => 1]);
 }
 
 }

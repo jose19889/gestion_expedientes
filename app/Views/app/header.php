@@ -91,6 +91,8 @@
           </form>
         </div>
       </li>
+      
+<?= $this->include('app/notification') ?>
       <li class="nav-item dropdown user-menu">
 
          <?php

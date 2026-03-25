@@ -68,8 +68,6 @@
 
            <!-- Filtros -->
 <div class="card-body">
-
-
     <!-- Tabla de expedientes -->
     <table id="example1" class="table table-bordered table-striped">
         <thead>

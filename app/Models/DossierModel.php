@@ -167,4 +167,31 @@ public function get_by_id($expediente_id)
 
     return $query->getResult();
 }
+
+
+public function getExpedientesPorEstado()
+{
+    return $this->db->table('expedientes e')
+        ->select('s.nombre as estado, COUNT(e.id) as total')
+        ->join('estados s', 's.id = e.estado_id')
+        ->groupBy('e.estado_id')
+        ->orderBy('s.orden', 'ASC')
+        ->get()
+        ->getResultArray();
+}
+
+public function getUltimosExpedientes($limit = 10)
+{
+    return $this->db->table('expedientes e')
+        ->select('
+            e.id,
+            e.titulo,
+            t.nombre as tipo
+        ')
+        ->join('tipos_expedientes t', 't.id = e.tipo_expedientes', 'left')
+        ->orderBy('e.id', 'DESC')
+        ->limit($limit)
+        ->get()
+        ->getResultArray();
+}
 }
