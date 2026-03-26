@@ -194,4 +194,15 @@ public function getUltimosExpedientes($limit = 10)
         ->get()
         ->getResultArray();
 }
+
+
+public function getAsignados($expedienteId)
+{
+    // Suponiendo que tienes tabla 'dossier_asignaciones' con campos 'dossier_id' y 'usuario_id'
+    return $this->db->table('dossier_asignaciones')
+                    ->where('dossier_id', $expedienteId)
+                    ->select('usuario_id')
+                    ->get()
+                    ->getResultArray();
+}
 }

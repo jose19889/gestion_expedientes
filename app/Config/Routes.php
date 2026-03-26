@@ -109,6 +109,14 @@ $routes->post('file/file_remove/(:num)', 'FileController::delete/$1');
     $routes->post('create-all', 'Migration::backupAll');
 });
 
+
+
+///////////////////////////////////////////////////////////////
+///////////notificatiions
+$routes->get('inbox-view', 'Notifications::index');
+$routes->get('inbox-open/(:num)', 'Notifications::open/$1');
+$routes->get('mark-as-read', 'Notifications::mark_as_read');
+
 ///////////////////////////////////////////////////////////////
 ///////////API REST ROUTES
 $routes->group('api/v1', ['namespace' => 'App\Controllers\Api' , 'filter' => 'apiAuth'], function($routes) {

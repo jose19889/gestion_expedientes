@@ -33,49 +33,33 @@ class Dossiers extends BaseController
                $this->FileModel = new FileModel();
         
     }
-
 public function index()
 {
+    helper('navbar');
+
+    // Datos del navbar
+    $navbarData = getNavbarData();
+
     $session = session();
+    $userId     = $session->get('user_id');
+    $userRoleId = $session->get('role_id');
+    $userDeptId = $session->get('departamento_id');
 
-    // Datos de usuario logueado
-    $userId      = $session->get('user_id');
-    $userRoleId  = $session->get('role_id');
-    $userDeptId  = $session->get('departamento_id');
-
-    // Modelos
     $dossierModel      = new DossierModel();
     $departamentoModel = new DeptsModel();
     $estadoModel       = new EstadoModel();
-    $notificacionModel = new NotificationModel();
 
-    // Filtros
     $filtros = [
         'departamento' => $this->request->getGet('departamento'),
         'estado'       => $this->request->getGet('estado'),
         'prioridad'    => $this->request->getGet('prioridad'),
     ];
 
-    // Expedientes
     $expedientes = $dossierModel->getExpedientesData($userId, $userRoleId, $userDeptId, $filtros);
-
-    // Datos para selects
     $departamentos = $departamentoModel->getDepartamentos();
     $estados       = $estadoModel->orderBy('orden', 'ASC')->findAll();
 
-    // 🔔 Notificaciones del usuario
-    $notificaciones = $notificacionModel
-    ->where('usuario_id', $userId)
-    ->orderBy('created_at', 'DESC')
-    ->limit(10)
-    ->find();
-
-    $unreadCount = $notificacionModel
-        ->where('usuario_id', $userId)
-        ->where('leido', 0)
-        ->countAllResults();
-
-    // Data final
+    // Pasamos navbarData y otros datos
     $data = [
         'expedientes'   => $expedientes,
         'departamentos' => $departamentos,
@@ -83,15 +67,11 @@ public function index()
         'filtros'       => $filtros,
         'userRoleId'    => $userRoleId,
         'userId'        => $userId,
-
-        // 🔔 nuevos datos
-        'notificaciones' => $notificaciones,
-        'unreadCount'    => $unreadCount
+        'navbarData'    => $navbarData,  // ✅ navbar completo
     ];
-echo session()->get('user_id');
+
     return view('dossier/index', $data);
 }
-
     public function create()
 {
     // Generar un código provisional para mostrar en el formulario
@@ -275,6 +255,8 @@ public function store()
 public function edit($id = null)
 {
     helper(['form', 'url']);
+
+     $usuarioId = $this->request->getPost('usuario_id');
 
     if (!$id) {
         return redirect()->to('/dossiers')->with('danger', 'Expediente no especificado.');

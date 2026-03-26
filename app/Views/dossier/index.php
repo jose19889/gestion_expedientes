@@ -1,4 +1,4 @@
-<?= $this->include('app/header') ?>
+<?= view('app/header', $navbarData) ?>
 <?= $this->section('content') ?>
 
 <section class="content">
