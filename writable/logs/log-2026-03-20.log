@@ -1,0 +1,105 @@
+CRITICAL - 2026-03-20 10:01:53 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\Dossiers.php on line 343.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-20 10:02:07 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\Dossiers.php on line 343.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-20 10:02:13 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\Dossiers.php on line 343.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-20 10:03:41 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\Dossiers.php on line 343.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-20 10:18:23 --> require_once(C:\xampp\htdocs\apps\gestion_expedientes\app\ThirdParty/dompdf/autoload.inc.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 16.
+ 1 APPPATH\Controllers\Dossiers.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\ThirdParty/dompdf/autoload.inc.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 16)
+ 2 APPPATH\Controllers\Dossiers.php(16): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dossiers')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dossiers')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Dossiers', true)
+ 8 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-20 10:18:30 --> require_once(C:\xampp\htdocs\apps\gestion_expedientes\app\ThirdParty/dompdf/autoload.inc.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 16.
+ 1 APPPATH\Controllers\Dossiers.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\ThirdParty/dompdf/autoload.inc.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 16)
+ 2 APPPATH\Controllers\Dossiers.php(16): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dossiers')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dossiers')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Dossiers', true)
+ 8 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-20 10:23:56 --> require_once(C:\xampp\htdocs\apps\gestion_expedientes\app\ThirdParty/dompdf/autoload.inc.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 16.
+ 1 APPPATH\Controllers\Dossiers.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\ThirdParty/dompdf/autoload.inc.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 16)
+ 2 APPPATH\Controllers\Dossiers.php(16): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dossiers')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dossiers')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Dossiers', true)
+ 8 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-20 10:24:09 --> require_once(C:\xampp\htdocs\apps\gestion_expedientes\app\ThirdParty/dompdf/autoload.inc.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 16.
+ 1 APPPATH\Controllers\Dossiers.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\ThirdParty/dompdf/autoload.inc.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 16)
+ 2 APPPATH\Controllers\Dossiers.php(16): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dossiers')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dossiers')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Dossiers', true)
+ 8 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-20 10:25:48 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\Dossiers.php on line 344.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-20 10:27:34 --> Class "Dompdf\Cpdf" not found
+in APPPATH\ThirdParty\dompdf\src\Adapter\CPDF.php on line 177.
+ 1 APPPATH\ThirdParty\dompdf\src\CanvasFactory.php(58): Dompdf\Adapter\CPDF->__construct('letter', 'portrait', Object(Dompdf\Dompdf))
+ 2 APPPATH\ThirdParty\dompdf\src\Dompdf.php(274): Dompdf\CanvasFactory::get_instance(Object(Dompdf\Dompdf), 'letter', 'portrait')
+ 3 APPPATH\Controllers\Dossiers.php(344): Dompdf\Dompdf->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-20 10:46:21 --> Class "Dompdf\Cpdf" not found
+in APPPATH\ThirdParty\dompdf\src\Adapter\CPDF.php on line 177.
+ 1 APPPATH\ThirdParty\dompdf\src\CanvasFactory.php(58): Dompdf\Adapter\CPDF->__construct('letter', 'portrait', Object(Dompdf\Dompdf))
+ 2 APPPATH\ThirdParty\dompdf\src\Dompdf.php(274): Dompdf\CanvasFactory::get_instance(Object(Dompdf\Dompdf), 'letter', 'portrait')
+ 3 APPPATH\Controllers\Dossiers.php(344): Dompdf\Dompdf->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-20 12:30:13 --> Class "Dompdf\Cpdf" not found
+in APPPATH\ThirdParty\dompdf\src\Adapter\CPDF.php on line 177.
+ 1 APPPATH\ThirdParty\dompdf\src\CanvasFactory.php(58): Dompdf\Adapter\CPDF->__construct('letter', 'portrait', Object(Dompdf\Dompdf))
+ 2 APPPATH\ThirdParty\dompdf\src\Dompdf.php(274): Dompdf\CanvasFactory::get_instance(Object(Dompdf\Dompdf), 'letter', 'portrait')
+ 3 APPPATH\Controllers\Dossiers.php(344): Dompdf\Dompdf->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

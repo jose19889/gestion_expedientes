@@ -1,0 +1,32 @@
+ERROR - 2026-04-10 08:38:27 --> No se encontró el QR en: C:\xampp\htdocs\apps\gestion_expedientes\writable\uploads/qrs/QR001
+CRITICAL - 2026-04-10 08:38:27 --> Undefined variable $qrBase64
+in APPPATH\Controllers\Dossiers.php on line 394.
+ 1 APPPATH\Controllers\Dossiers.php(394): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qrBase64', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 394)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-04-10 08:40:04 --> QR no encontrado en la ruta: C:\xampp\htdocs\apps\gestion_expedientes\writable\uploads/qrs/QR001
+ERROR - 2026-04-10 08:40:11 --> QR no encontrado en la ruta: C:\xampp\htdocs\apps\gestion_expedientes\writable\uploads/qrs/QR001
+ERROR - 2026-04-10 08:41:02 --> QR no encontrado en la ruta: C:\xampp\htdocs\apps\gestion_expedientes\writable\uploads/qrs/
+ERROR - 2026-04-10 08:41:02 --> QR no encontrado en la ruta: C:\xampp\htdocs\apps\gestion_expedientes\writable\uploads/qrs/
+ERROR - 2026-04-10 08:44:20 --> QR no encontrado en la ruta: C:\xampp\htdocs\apps\gestion_expedientes\writable\uploads/qrs/QR001
+ERROR - 2026-04-10 08:46:27 --> RUTA BUSCADA: C:\xampp\htdocs\apps\gestion_expedientes\writable\uploads\qrs\QR001
+ERROR - 2026-04-10 08:52:01 --> PHP dice que NO EXISTE: C:/xampp/htdocs/apps/gestion_expedientes/writable/uploads/qrs/QR001
+ERROR - 2026-04-10 08:52:06 --> PHP dice que NO EXISTE: C:/xampp/htdocs/apps/gestion_expedientes/writable/uploads/qrs/QR001
+ERROR - 2026-04-10 08:52:10 --> PHP dice que NO EXISTE: C:/xampp/htdocs/apps/gestion_expedientes/writable/uploads/qrs/QR002
+CRITICAL - 2026-04-10 09:13:14 --> Cannot redeclare App\Controllers\Dossiers::descargar()
+in APPPATH\Controllers\Dossiers.php on line 408.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-10 09:44:01 --> Class "PHPQRCode\QRcode" not found
+in APPPATH\Controllers\Dossiers.php on line 357.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('35')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-10 09:45:21 --> Class "PHPQRCode\QRcode" not found
+in APPPATH\Controllers\Dossiers.php on line 351.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('31')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

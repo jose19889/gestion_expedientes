@@ -1,0 +1,201 @@
+CRITICAL - 2026-04-07 09:31:39 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Dossiers.php on line 339.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 09:31:42 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Dossiers.php on line 339.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 09:36:11 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Dossiers.php on line 339.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 10:22:52 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Dossiers.php on line 339.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 10:40:14 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Dossiers.php on line 342.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 10:43:05 --> file_get_contents(C:\xampp\htdocs\apps\gestion_expedientes\QR001): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 344.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 344)
+ 2 APPPATH\Controllers\Dossiers.php(344): file_get_contents('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 10:43:14 --> file_get_contents(C:\xampp\htdocs\apps\gestion_expedientes\QR001): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 344.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 344)
+ 2 APPPATH\Controllers\Dossiers.php(344): file_get_contents('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 10:45:46 --> file_get_contents(C:\xampp\htdocs\apps\gestion_expedientes\QR001): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 347.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 347)
+ 2 APPPATH\Controllers\Dossiers.php(347): file_get_contents('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 10:45:48 --> file_get_contents(C:\xampp\htdocs\apps\gestion_expedientes\QR001): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 347.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 347)
+ 2 APPPATH\Controllers\Dossiers.php(347): file_get_contents('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 10:45:49 --> file_get_contents(C:\xampp\htdocs\apps\gestion_expedientes\QR001): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 347.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 347)
+ 2 APPPATH\Controllers\Dossiers.php(347): file_get_contents('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 10:46:30 --> file_get_contents(C:\xampp\htdocs\apps\gestion_expedientes\QR001): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 347.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 347)
+ 2 APPPATH\Controllers\Dossiers.php(347): file_get_contents('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 10:46:33 --> file_get_contents(C:\xampp\htdocs\apps\gestion_expedientes\QR001): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 347.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 347)
+ 2 APPPATH\Controllers\Dossiers.php(347): file_get_contents('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 10:48:42 --> file_get_contents(C:\xampp\htdocs\apps\gestion_expedientes\QR001): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 347.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 347)
+ 2 APPPATH\Controllers\Dossiers.php(347): file_get_contents('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\QR001')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 14:58:23 --> Invalid file: "dossiers/pdf_template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dossiers/pdf_template.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossiers/pdf_template', [], true)
+ 3 APPPATH\Controllers\Dossiers.php(368): view('dossiers/pdf_template', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('32')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 14:59:43 --> Cannot use object of type stdClass as array
+in APPPATH\Views\dossier\pdf_template.php on line 5.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/pdf_template', [], true)
+ 4 APPPATH\Controllers\Dossiers.php(368): view('dossier/pdf_template', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('32')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 15:09:20 --> file_get_contents(C:\xampp\htdocs\apps\gestion_expedientes): Failed to open stream: Permission denied
+in APPPATH\Controllers\Dossiers.php on line 361.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\apps\\gestion_expedientes): Failed to open stream: Permission denied', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 361)
+ 2 APPPATH\Controllers\Dossiers.php(361): file_get_contents('C:\\xampp\\htdocs\\apps\\gestion_expedientes')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('11')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 15:12:00 --> Class "App\Models\ArchivoModel" not found
+in APPPATH\Controllers\Dossiers.php on line 330.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('11')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-04-07 15:12:51 --> mysqli_sql_exception: Unknown column 'dossier_id' in 'where clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(340): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('32')
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2026-04-07 15:12:51 --> Unknown column 'dossier_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `archivos_adjuntos`
+WHERE `dossier_id` = :dossier_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Dossiers.php(340): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('32')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 15:13:39 --> Attempt to read property "nombre_original" on array
+in APPPATH\Views\dossier\pdf_template.php on line 125.
+ 1 APPPATH\Views\dossier\pdf_template.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre_original" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\pdf_template.php', 125)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/pdf_template', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(355): view('dossier/pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('32')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 15:41:32 --> Cannot redeclare App\Controllers\Dossiers::descargar()
+in APPPATH\Controllers\Dossiers.php on line 395.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-07 15:42:26 --> Class "App\Models\DepartamentoModel" not found
+in APPPATH\Controllers\Dossiers.php on line 355.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('10')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 15:42:44 --> Attempt to read property "nombre" on array
+in APPPATH\Controllers\Dossiers.php on line 372.
+ 1 APPPATH\Controllers\Dossiers.php(372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 372)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('10')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 15:42:47 --> Attempt to read property "nombre" on array
+in APPPATH\Controllers\Dossiers.php on line 372.
+ 1 APPPATH\Controllers\Dossiers.php(372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 372)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('10')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 15:42:48 --> Attempt to read property "nombre" on array
+in APPPATH\Controllers\Dossiers.php on line 372.
+ 1 APPPATH\Controllers\Dossiers.php(372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 372)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('10')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-07 15:43:21 --> Attempt to read property "nombre" on array
+in APPPATH\Controllers\Dossiers.php on line 372.
+ 1 APPPATH\Controllers\Dossiers.php(372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 372)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('10')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

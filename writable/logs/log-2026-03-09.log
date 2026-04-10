@@ -1,0 +1,233 @@
+CRITICAL - 2026-03-09 09:01:10 --> Call to undefined function App\Controllers\dump()
+in APPPATH\Controllers\Dossiers.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 09:15:56 --> Attempt to read property "departamento_actual" on array
+in APPPATH\Controllers\Login.php on line 47.
+ 1 APPPATH\Controllers\Login.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "departamento_actual" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Login.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 09:16:43 --> Undefined array key "departamento_actual"
+in APPPATH\Controllers\Login.php on line 47.
+ 1 APPPATH\Controllers\Login.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "departamento_actual"', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Login.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 09:25:35 --> Undefined variable $total_denuncias
+in APPPATH\Views\app\shortcut.php on line 6.
+ 1 APPPATH\Views\app\shortcut.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_denuncias', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\shortcut.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\shortcut.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/shortcut', null, true)
+ 5 APPPATH\Views\roles\index.php(29): CodeIgniter\View\View->include('app/shortcut')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\roles\\index.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('roles/index', [], true)
+ 9 APPPATH\Controllers\Roles.php(21): view('roles/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Roles->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 09:26:41 --> Undefined variable $total_denuncias
+in APPPATH\Views\app\shortcut.php on line 6.
+ 1 APPPATH\Views\app\shortcut.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_denuncias', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\shortcut.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\shortcut.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/shortcut', null, true)
+ 5 APPPATH\Views\roles\create.php(28): CodeIgniter\View\View->include('app/shortcut')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\roles\\create.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('roles/create', [], true)
+ 9 APPPATH\Controllers\Roles.php(27): view('roles/create')
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Roles->create()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-09 09:38:05 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Users.php(90): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Users->insert()
+#10 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#11 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2026-03-09 09:38:05 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `role_id`, `departamento_id`, `contacto`, `password`, `profile_image`, `created_at`, `updated_at`) VALUES (:nombre:, :apellido:, :email:, :role_id:, :departamento_id:, :contacto:, :password:, :profile_image:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users.php(90): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 09:44:51 --> Undefined variable $total_denuncias
+in APPPATH\Views\app\shortcut.php on line 6.
+ 1 APPPATH\Views\app\shortcut.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_denuncias', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\shortcut.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\shortcut.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/shortcut', null, true)
+ 5 APPPATH\Views\roles\edit.php(28): CodeIgniter\View\View->include('app/shortcut')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\roles\\edit.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('roles/edit', [], true)
+ 9 APPPATH\Controllers\Roles.php(75): view('roles/edit', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Roles->edit('6')
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 10:05:39 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\Dossiers.php on line 343.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 11:53:15 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\assign.php on line 50.
+ 1 APPPATH\Views\dossier\assign.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/assign', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(465): view('dossier/assign', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->assign('27')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 11:53:19 --> Attempt to read property "id" on array
+in APPPATH\Views\dossier\assign.php on line 50.
+ 1 APPPATH\Views\dossier\assign.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/assign', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(465): view('dossier/assign', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->assign('27')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 11:55:21 --> Cannot use object of type stdClass as array
+in APPPATH\Views\dossier\assign.php on line 50.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/assign', [], true)
+ 4 APPPATH\Controllers\Dossiers.php(468): view('dossier/assign', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->assign('27')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 11:56:02 --> Undefined property: stdClass::$role_name
+in APPPATH\Views\dossier\assign.php on line 51.
+ 1 APPPATH\Views\dossier\assign.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$role_name', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/assign', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(468): view('dossier/assign', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->assign('27')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 11:56:04 --> Undefined property: stdClass::$role_name
+in APPPATH\Views\dossier\assign.php on line 51.
+ 1 APPPATH\Views\dossier\assign.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$role_name', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/assign', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(468): view('dossier/assign', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->assign('27')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 11:56:05 --> Undefined property: stdClass::$role_name
+in APPPATH\Views\dossier\assign.php on line 51.
+ 1 APPPATH\Views\dossier\assign.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$role_name', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/assign', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(468): view('dossier/assign', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->assign('27')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 12:03:07 --> Undefined property: stdClass::$role_name
+in APPPATH\Views\dossier\assign.php on line 51.
+ 1 APPPATH\Views\dossier\assign.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$role_name', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\assign.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/assign', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(468): view('dossier/assign', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->assign('27')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 14:12:47 --> syntax error, unexpected token "*"
+in APPPATH\Controllers\Dossiers.php on line 202.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dossiers')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dossiers')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Dossiers', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-09 14:13:08 --> syntax error, unexpected token "*"
+in APPPATH\Controllers\Dossiers.php on line 202.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dossiers')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dossiers')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Dossiers', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-09 14:38:41 --> mysqli_sql_exception: Unknown column 'asignado_por' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ex...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ex...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ex...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(516): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->assign_save('27')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2026-03-09 14:38:41 --> Unknown column 'asignado_por' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `expediente_asignaciones` (`expediente_id`, `user_id`, `asignado_por`, `fecha_asignacion`) VALUES (:expediente_id:, :user_id:, :asignado_por:, :fecha_asignacion:)', [...], false)
+ 2 APPPATH\Controllers\Dossiers.php(516): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->assign_save('27')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-09 14:39:29 --> mysqli_sql_exception: Unknown column 'asignado_a' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ex...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ex...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ex...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(516): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->assign_save('27')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2026-03-09 14:39:29 --> Unknown column 'asignado_a' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `expediente_asignaciones` (`expediente_id`, `user_id`, `asignado_a`, `fecha_asignacion`) VALUES (:expediente_id:, :user_id:, :asignado_a:, :fecha_asignacion:)', [...], false)
+ 2 APPPATH\Controllers\Dossiers.php(516): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->assign_save('27')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

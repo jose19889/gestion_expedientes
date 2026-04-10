@@ -1,0 +1,790 @@
+CRITICAL - 2026-03-02 13:07:39 --> Class "App\Controllers\UsuarioModel" not found
+in APPPATH\Controllers\Login.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 13:08:24 --> mysqli_sql_exception: Unknown table 'gest_exp.users' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `users`....', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\UserModel.php(41): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Login.php(27): App\Models\UserModel->getUserByEmail('admin2@ademy.co...')
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-03-02 13:08:24 --> Unknown table 'gest_exp.users'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `roles`.`role_name`
+FROM `usuarios`
+JOIN `roles` ON `users`.`role_id` = `roles`.`id`
+WHERE `users`.`email` = :users.email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\UserModel.php(41): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Login.php(27): App\Models\UserModel->getUserByEmail('admin2@ademy.com')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 13:10:14 --> mysqli_sql_exception: Unknown column 'usuarios.role_id' in 'on clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `usuario...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `usuario...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\UserModel.php(41): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Login.php(27): App\Models\UserModel->getUserByEmail('admin2@ademy.co...')
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-03-02 13:10:14 --> Unknown column 'usuarios.role_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `usuarios`.*, `roles`.`role_name`
+FROM `usuarios`
+JOIN `roles` ON `usuarios`.`role_id` = `roles`.`id`
+WHERE `usuarios`.`email` = :usuarios.email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\UserModel.php(41): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Login.php(27): App\Models\UserModel->getUserByEmail('admin2@ademy.com')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:05:50 --> mysqli_sql_exception: Unknown column 'roles.nombre' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `usuario...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `usuario...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\UserModel.php(41): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Login.php(27): App\Models\UserModel->getUserByEmail('admin2@ademy.co...')
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-03-02 14:05:50 --> Unknown column 'roles.nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `usuarios`.*, `roles`.`nombre` AS `role_name`
+FROM `usuarios`
+JOIN `roles` ON `usuarios`.`role_id` = `roles`.`id`
+WHERE `usuarios`.`email` = :usuarios.email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\UserModel.php(41): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Login.php(27): App\Models\UserModel->getUserByEmail('admin2@ademy.com')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:08:12 --> mysqli_sql_exception: Unknown column 'roles.nombre' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `usuario...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `usuario...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\UserModel.php(41): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Login.php(26): App\Models\UserModel->getUserByEmail('admin2@ademy.co...')
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Login->auth()
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-03-02 14:08:12 --> Unknown column 'roles.nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `usuarios`.*, `roles`.`nombre` AS `role_name`
+FROM `usuarios`
+JOIN `roles` ON `usuarios`.`role_id` = `roles`.`id`
+WHERE `usuarios`.`email` = :usuarios.email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\UserModel.php(41): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Login.php(26): App\Models\UserModel->getUserByEmail('admin2@ademy.com')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:21:40 --> mysqli_sql_exception: Unknown column 'profile_image' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Database\Seeds\UsersSeeder.php(48): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\Seeder.php(146): App\Database\Seeds\UsersSeeder->run()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\apps\gestion_expedientes\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2026-03-02 14:22:21 --> mysqli_sql_exception: Duplicate entry 'admin@gmail.com' for key 'email' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Database\Seeds\UsersSeeder.php(48): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\Seeder.php(146): App\Database\Seeds\UsersSeeder->run()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\apps\gestion_expedientes\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2026-03-02 14:38:13 --> mysqli_sql_exception: Table 'gest_exp.denuncias' doesn't exist in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_de...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_de...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_de...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-02 14:38:13 --> Table 'gest_exp.denuncias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_denuncia`, COUNT(*) as count
+FROM `denuncias`
+GROUP BY `tipo_denuncia`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:45:44 --> mysqli_sql_exception: Unknown column 'role_name' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Database\Seeds\UsersSeeder.php(57): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\Seeder.php(146): App\Database\Seeds\UsersSeeder->run()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\apps\gestion_expedientes\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2026-03-02 14:46:48 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Database\Seeds\UsersSeeder.php(57): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\Seeder.php(146): App\Database\Seeds\UsersSeeder->run()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\apps\gestion_expedientes\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2026-03-02 14:48:01 --> mysqli_sql_exception: Table 'gest_exp.denuncias' doesn't exist in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_de...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_de...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_de...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-02 14:48:01 --> Table 'gest_exp.denuncias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_denuncia`, COUNT(*) as count
+FROM `denuncias`
+GROUP BY `tipo_denuncia`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:48:46 --> mysqli_sql_exception: Table 'gest_exp.denuncias' doesn't exist in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_de...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_de...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_de...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-02 14:48:46 --> Table 'gest_exp.denuncias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_denuncia`, COUNT(*) as count
+FROM `denuncias`
+GROUP BY `tipo_denuncia`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:48:48 --> mysqli_sql_exception: Table 'gest_exp.denuncias' doesn't exist in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_de...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_de...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_de...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-02 14:48:48 --> Table 'gest_exp.denuncias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_denuncia`, COUNT(*) as count
+FROM `denuncias`
+GROUP BY `tipo_denuncia`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:49:09 --> mysqli_sql_exception: Table 'gest_exp.denuncias' doesn't exist in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_de...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_de...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_de...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_de...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-02 14:49:09 --> Table 'gest_exp.denuncias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_denuncia`, COUNT(*) as count
+FROM `denuncias`
+GROUP BY `tipo_denuncia`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\EmailsModel.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\EmailsModel->getDenunciaStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 14:50:25 --> Call to undefined method App\Models\DossierModel::getDenunciaStatistics
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Dashboard.php(16): CodeIgniter\Model->__call('getDenunciaStatistics', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 14:50:42 --> Undefined variable $statistics
+in APPPATH\Controllers\Dashboard.php on line 23.
+ 1 APPPATH\Controllers\Dashboard.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $statistics', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dashboard.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 14:52:21 --> Unterminated comment starting line 32
+in APPPATH\Controllers\Dashboard.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dashboard.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Dashboard', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 14:53:01 --> Call to undefined method App\Models\DossierModel::getDenunciaStatistics
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Dashboard.php(16): CodeIgniter\Model->__call('getDenunciaStatistics', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:53:56 --> mysqli_sql_exception: Unknown column 'tipo_expediente' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_ex...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_ex...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_ex...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_ex...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-02 14:53:56 --> Unknown column 'tipo_expediente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_expediente`, COUNT(*) as count
+FROM `expedientes`
+GROUP BY `tipo_expediente`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:55:49 --> mysqli_sql_exception: Unknown column 'tipo_expediente' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_ex...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_ex...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_ex...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_ex...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-02 14:55:49 --> Unknown column 'tipo_expediente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_expediente`, COUNT(*) as count
+FROM `expedientes`
+GROUP BY `tipo_expediente`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:55:52 --> mysqli_sql_exception: Unknown column 'tipo_expediente' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_ex...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_ex...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_ex...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_ex...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-02 14:55:52 --> Unknown column 'tipo_expediente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_expediente`, COUNT(*) as count
+FROM `expedientes`
+GROUP BY `tipo_expediente`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:56:10 --> mysqli_sql_exception: Unknown column 'tipo_expediente' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_ex...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_ex...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_ex...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_ex...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-02 14:56:10 --> Unknown column 'tipo_expediente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_expediente`, COUNT(*) as count
+FROM `expedientes`
+GROUP BY `tipo_expediente`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:56:12 --> mysqli_sql_exception: Unknown column 'tipo_expediente' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tipo_ex...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipo_ex...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipo_ex...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_ex...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-02 14:56:12 --> Unknown column 'tipo_expediente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tipo_expediente`, COUNT(*) as count
+FROM `expedientes`
+GROUP BY `tipo_expediente`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-02 14:56:29 --> mysqli_sql_exception: Unknown column 'tipo_expediente' in 'group statement' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `estado`...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `estado`...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `estado`...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `estado`...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-02 14:56:29 --> Unknown column 'tipo_expediente' in 'group statement'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `estado`, COUNT(*) as count
+FROM `expedientes`
+GROUP BY `tipo_expediente`
+ORDER BY `count` DESC', [], false)
+ 2 APPPATH\Models\DossierModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(16): App\Models\DossierModel->getStatistics()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:07:22 --> Undefined variable $tipo_denuncia
+in APPPATH\Views\dossier\index.php on line 55.
+ 1 APPPATH\Views\dossier\index.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tipo_denuncia', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(28): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:07:25 --> Undefined variable $tipo_denuncia
+in APPPATH\Views\dossier\index.php on line 55.
+ 1 APPPATH\Views\dossier\index.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tipo_denuncia', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(28): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:10:32 --> Undefined variable $departamentos
+in APPPATH\Views\dossier\index.php on line 27.
+ 1 APPPATH\Views\dossier\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(28): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:10:36 --> Undefined variable $departamentos
+in APPPATH\Views\dossier\index.php on line 27.
+ 1 APPPATH\Views\dossier\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(28): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:23:05 --> Class "App\Models\DeptsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Dossiers->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:23:33 --> Class "App\Controllers\DeptsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Dossiers->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:23:47 --> Class "App\Models\DeptsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Dossiers->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:24:08 --> Class "App\Models\DeptsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Dossiers->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:26:36 --> Call to undefined method App\Models\DossierModel::getFilteredExpedientes
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Dossiers.php(29): CodeIgniter\Model->__call('getFilteredExpedientes', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:26:39 --> Call to undefined method App\Models\DossierModel::getFilteredExpedientes
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Dossiers.php(29): CodeIgniter\Model->__call('getFilteredExpedientes', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:27:01 --> Undefined variable $filters
+in APPPATH\Controllers\Dossiers.php on line 26.
+ 1 APPPATH\Controllers\Dossiers.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filters', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:27:02 --> Undefined variable $filters
+in APPPATH\Controllers\Dossiers.php on line 26.
+ 1 APPPATH\Controllers\Dossiers.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filters', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:27:04 --> Undefined variable $filters
+in APPPATH\Controllers\Dossiers.php on line 26.
+ 1 APPPATH\Controllers\Dossiers.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filters', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:29:39 --> Undefined variable $filters
+in APPPATH\Controllers\Dossiers.php on line 26.
+ 1 APPPATH\Controllers\Dossiers.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filters', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:29:50 --> Undefined array key "departamento_actual"
+in APPPATH\Views\dossier\index.php on line 28.
+ 1 APPPATH\Views\dossier\index.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "departamento_actual"', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(40): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:29:51 --> Undefined array key "departamento_actual"
+in APPPATH\Views\dossier\index.php on line 28.
+ 1 APPPATH\Views\dossier\index.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "departamento_actual"', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(40): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:29:53 --> Undefined array key "departamento_actual"
+in APPPATH\Views\dossier\index.php on line 28.
+ 1 APPPATH\Views\dossier\index.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "departamento_actual"', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(40): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:31:36 --> Undefined variable $estados
+in APPPATH\Views\dossier\index.php on line 37.
+ 1 APPPATH\Views\dossier\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(40): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:33:05 --> Undefined variable $estados
+in APPPATH\Views\dossier\index.php on line 37.
+ 1 APPPATH\Views\dossier\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(40): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:33:07 --> Undefined variable $estados
+in APPPATH\Views\dossier\index.php on line 37.
+ 1 APPPATH\Views\dossier\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(40): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:34:40 --> Undefined variable $estados
+in APPPATH\Views\dossier\index.php on line 37.
+ 1 APPPATH\Views\dossier\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(40): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:34:41 --> Undefined variable $estados
+in APPPATH\Views\dossier\index.php on line 37.
+ 1 APPPATH\Views\dossier\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(40): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:35:04 --> Class "App\Models\DepstsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:35:07 --> Class "App\Models\DepstsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:36:59 --> Class "App\Controllers\DepstsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:54:57 --> Class "App\Models\DepstsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:54:58 --> Class "App\Models\DepstsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:55:39 --> Class "App\Models\DepstsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:55:40 --> Class "App\Models\DepstsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:55:41 --> Class "App\Models\DepstsModel" not found
+in APPPATH\Controllers\Dossiers.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:56:26 --> Class "App\Models\EstadoModel" not found
+in APPPATH\Controllers\Dossiers.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:56:29 --> Class "App\Models\EstadoModel" not found
+in APPPATH\Controllers\Dossiers.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:57:44 --> Class "App\Models\EstadoModel" not found
+in APPPATH\Controllers\Dossiers.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:57:47 --> Class "App\Models\EstadoModel" not found
+in APPPATH\Controllers\Dossiers.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:58:06 --> Undefined array key "estado"
+in APPPATH\Views\dossier\index.php on line 38.
+ 1 APPPATH\Views\dossier\index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(51): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:58:08 --> Undefined array key "estado"
+in APPPATH\Views\dossier\index.php on line 38.
+ 1 APPPATH\Views\dossier\index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(51): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-02 15:58:44 --> Undefined array key "departamento_actual"
+in APPPATH\Views\dossier\index.php on line 80.
+ 1 APPPATH\Views\dossier\index.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "departamento_actual"', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php', 80)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+ 5 APPPATH\Controllers\Dossiers.php(51): view('dossier/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,45 @@
+CRITICAL - 2026-03-24 08:30:55 --> Cannot use object of type stdClass as array
+in APPPATH\Views\dossier\view.php on line 10.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/view', [], true)
+ 4 APPPATH\Controllers\Dossiers.php(540): view('dossier/view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->view('31')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-24 09:27:41 --> Class "App\Filters\AuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('dossiers', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-24 11:06:20 --> require_once(C:\xampp\htdocs\apps\gestion_expedientes\app\ThirdParty/phpqrcode/qrlib.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Dossiers.php on line 15.
+ 1 APPPATH\Controllers\Dossiers.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\ThirdParty/phpqrcode/qrlib.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php', 15)
+ 2 APPPATH\Controllers\Dossiers.php(15): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Controllers\\Dossiers.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dossiers')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dossiers')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Dossiers', true)
+ 8 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-24 11:11:49 --> Class "QRcode" not found
+in APPPATH\Controllers\Dossiers.php on line 179.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->store()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-24 11:12:33 --> Class "QRcode" not found
+in APPPATH\Controllers\Dossiers.php on line 179.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->store()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-24 11:12:40 --> Class "QRcode" not found
+in APPPATH\Controllers\Dossiers.php on line 179.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->store()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

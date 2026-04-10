@@ -1,0 +1,409 @@
+CRITICAL - 2026-03-25 09:18:53 --> Class "App\Models\NotificacionModel" not found
+in APPPATH\Controllers\Dossiers.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:19:18 --> Class "App\Models\NotificacionModel" not found
+in APPPATH\Controllers\Dossiers.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:26:12 --> Class "App\Models\NotificacionModel" not found
+in APPPATH\Controllers\Dossiers.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:26:15 --> Class "App\Models\NotificacionModel" not found
+in APPPATH\Controllers\Dossiers.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:26:57 --> Class "App\Models\NotificacionModel" not found
+in APPPATH\Controllers\Dossiers.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:26:58 --> Class "App\Models\NotificacionModel" not found
+in APPPATH\Controllers\Dossiers.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:27:00 --> Class "App\Models\NotificacionModel" not found
+in APPPATH\Controllers\Dossiers.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:27:47 --> Class "App\Models\NotificationModel" not found
+in APPPATH\Controllers\Dossiers.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:27:53 --> Class "App\Models\NotificationModel" not found
+in APPPATH\Controllers\Dossiers.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-25 09:28:14 --> mysqli_sql_exception: Unknown column 'leida' in 'where clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-25 09:28:15 --> Unknown column 'leida' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `notificaciones`
+WHERE `usuario_id` IS NULL
+AND `leida` = :leida:', [...], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-25 09:28:18 --> mysqli_sql_exception: Unknown column 'leida' in 'where clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-25 09:28:18 --> Unknown column 'leida' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `notificaciones`
+WHERE `usuario_id` IS NULL
+AND `leida` = :leida:', [...], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-25 09:28:19 --> mysqli_sql_exception: Unknown column 'leida' in 'where clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-25 09:28:19 --> Unknown column 'leida' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `notificaciones`
+WHERE `usuario_id` IS NULL
+AND `leida` = :leida:', [...], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-25 09:28:20 --> mysqli_sql_exception: Unknown column 'leida' in 'where clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-25 09:28:20 --> Unknown column 'leida' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `notificaciones`
+WHERE `usuario_id` IS NULL
+AND `leida` = :leida:', [...], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-25 09:28:47 --> mysqli_sql_exception: Unknown column 'leida' in 'where clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-25 09:28:47 --> Unknown column 'leida' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `notificaciones`
+WHERE `usuario_id` IS NULL
+AND `leida` = :leida:', [...], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-25 09:28:50 --> mysqli_sql_exception: Unknown column 'leida' in 'where clause' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-25 09:28:50 --> Unknown column 'leida' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `notificaciones`
+WHERE `usuario_id` IS NULL
+AND `leida` = :leida:', [...], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dossiers.php(73): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:29:09 --> Invalid file: "app/notification.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app/notification.php')
+ 2 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/notification', null, true)
+ 3 APPPATH\Views\app\header.php(95): CodeIgniter\View\View->include('app/notification')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\header.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/header', null, true)
+ 7 APPPATH\Views\dossier\index.php(1): CodeIgniter\View\View->include('app/header')
+ 8 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+ 9 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+11 APPPATH\Controllers\Dossiers.php(89): view('dossier/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+13 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+14 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:46:03 --> Class "App\Services\NotificacionService" not found
+in APPPATH\Controllers\Dossiers.php on line 527.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->UpdateMovement('24')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:47:10 --> Class "App\Services\NotificacionService" not found
+in APPPATH\Controllers\Dossiers.php on line 527.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->UpdateMovement('24')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:47:53 --> Class "App\Services\NotificationService" not found
+in APPPATH\Controllers\Dossiers.php on line 527.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->UpdateMovement('24')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 09:48:17 --> Class "App\Services\NotificationService" not found
+in APPPATH\Controllers\Dossiers.php on line 527.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->UpdateMovement('24')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-25 09:53:23 --> mysqli_sql_exception: Unknown column 'tipo' in 'field list' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Services\NotificationService.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(529): App\Services\NotificationService->notificarCambioDepartamento('24', '2')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->UpdateMovement('24')
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-25 09:53:23 --> Unknown column 'tipo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notificaciones` (`usuario_id`, `departamento_id`, `titulo`, `mensaje`, `tipo`, `expediente_id`) VALUES (:usuario_id:, :departamento_id:, :titulo:, :mensaje:, :tipo:, :expediente_id:)', [...], false)
+ 2 APPPATH\Services\NotificationService.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Dossiers.php(529): App\Services\NotificationService->notificarCambioDepartamento('24', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->UpdateMovement('24')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-25 09:54:35 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\app\Services\NotificationService.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Dossiers.php(529): App\Services\NotificationService->notificarCambioDepartamento('24', '2')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Dossiers->UpdateMovement('24')
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-03-25 09:54:35 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notificaciones` (`usuario_id`, `departamento_id`, `titulo`, `mensaje`, `tipo`, `expediente_id`) VALUES (:usuario_id:, :departamento_id:, :titulo:, :mensaje:, :tipo:, :expediente_id:)', [...], false)
+ 2 APPPATH\Services\NotificationService.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Dossiers.php(529): App\Services\NotificationService->notificarCambioDepartamento('24', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->UpdateMovement('24')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-03-25 10:06:40 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`gest_exp`.`expedientes`, CONSTRAINT `fk_expedientes_creado_por` FOREIGN KEY (`creado_por`) REFERENCES `usuarios` (`id`) ON UPDATE CASCADE) in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `us...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\system\BaseModel.php(1080): CodeIgniter\Model->doDelete('0', false)
+#6 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\Users.php(156): CodeIgniter\BaseModel->delete('0')
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\Users->delete('0')
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2026-03-25 10:06:40 --> Cannot delete or update a parent row: a foreign key constraint fails (`gest_exp`.`expedientes`, CONSTRAINT `fk_expedientes_creado_por` FOREIGN KEY (`creado_por`) REFERENCES `usuarios` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `usuarios`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete('0', false)
+ 4 APPPATH\Controllers\Users.php(156): CodeIgniter\BaseModel->delete('0')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->delete('0')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 10:17:01 --> Undefined variable $unreadCount
+in APPPATH\Views\app\notification.php on line 5.
+ 1 APPPATH\Views\app\notification.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unreadCount', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\notification.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\notification.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/notification', null, true)
+ 5 APPPATH\Views\app\header.php(95): CodeIgniter\View\View->include('app/notification')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\header.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/header', null, true)
+ 9 APPPATH\Views\dashboard.php(1): CodeIgniter\View\View->include('app/header')
+10 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dashboard.php')
+11 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard', [], true)
+13 APPPATH\Controllers\Dashboard.php(30): view('dashboard', [...])
+14 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+15 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+16 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 10:25:27 --> Attempt to read property "leido" on array
+in APPPATH\Views\app\notification.php on line 28.
+ 1 APPPATH\Views\app\notification.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "leido" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\notification.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\notification.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/notification', null, true)
+ 5 APPPATH\Views\app\header.php(95): CodeIgniter\View\View->include('app/notification')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\header.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/header', null, true)
+ 9 APPPATH\Views\dossier\index.php(1): CodeIgniter\View\View->include('app/header')
+10 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+11 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+13 APPPATH\Controllers\Dossiers.php(92): view('dossier/index', [...])
+14 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+15 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+16 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 10:26:53 --> Attempt to read property "titulo" on array
+in APPPATH\Views\app\notification.php on line 33.
+ 1 APPPATH\Views\app\notification.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "titulo" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\notification.php', 33)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\notification.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/notification', null, true)
+ 5 APPPATH\Views\app\header.php(95): CodeIgniter\View\View->include('app/notification')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\header.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/header', null, true)
+ 9 APPPATH\Views\dossier\index.php(1): CodeIgniter\View\View->include('app/header')
+10 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+11 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+13 APPPATH\Controllers\Dossiers.php(92): view('dossier/index', [...])
+14 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+15 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+16 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 10:27:28 --> Attempt to read property "mensaje" on array
+in APPPATH\Views\app\notification.php on line 37.
+ 1 APPPATH\Views\app\notification.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mensaje" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\notification.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\notification.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/notification', null, true)
+ 5 APPPATH\Views\app\header.php(95): CodeIgniter\View\View->include('app/notification')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\header.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/header', null, true)
+ 9 APPPATH\Views\dossier\index.php(1): CodeIgniter\View\View->include('app/header')
+10 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+11 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+13 APPPATH\Controllers\Dossiers.php(92): view('dossier/index', [...])
+14 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+15 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+16 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-25 10:27:29 --> Attempt to read property "mensaje" on array
+in APPPATH\Views\app\notification.php on line 37.
+ 1 APPPATH\Views\app\notification.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mensaje" on array', 'C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\notification.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\notification.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/notification', null, true)
+ 5 APPPATH\Views\app\header.php(95): CodeIgniter\View\View->include('app/notification')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\app\\header.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('app/header', null, true)
+ 9 APPPATH\Views\dossier\index.php(1): CodeIgniter\View\View->include('app/header')
+10 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\apps\\gestion_expedientes\\app\\Views\\dossier\\index.php')
+11 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dossier/index', [], true)
+13 APPPATH\Controllers\Dossiers.php(92): view('dossier/index', [...])
+14 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->index()
+15 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+16 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

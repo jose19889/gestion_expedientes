@@ -1,0 +1,12 @@
+CRITICAL - 2026-04-06 11:34:33 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Dossiers.php on line 339.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-04-06 11:34:50 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Dossiers.php on line 339.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dossiers->descargar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dossiers))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

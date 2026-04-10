@@ -1,0 +1,26 @@
+ERROR - 2026-03-10 15:30:41 --> mysqli_sql_exception: Table 'gest_exp.reports' doesn't exist in C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\apps\gestion_expedientes\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apps\gestion_expedientes\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apps\gestion_expedientes\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '5')
+#6 C:\xampp\htdocs\apps\gestion_expedientes\app\Controllers\FileController.php(20): CodeIgniter\BaseModel->find('5')
+#7 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(919): App\Controllers\FileController->display_file('5')
+#8 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+#9 C:\xampp\htdocs\apps\gestion_expedientes\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\gestion_expedientes\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2026-03-10 15:30:41 --> Table 'gest_exp.reports' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reports`
+WHERE `reports`.`id` = :reports.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '5')
+ 4 APPPATH\Controllers\FileController.php(20): CodeIgniter\BaseModel->find('5')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FileController->display_file('5')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
